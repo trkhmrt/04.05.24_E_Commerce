@@ -1,43 +1,43 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using E_Commerce.DataAccess.Context;
+using E_Commerce.DataAccess.Entities;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace E_Commerce.Controller
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class CustomerController : ControllerBase
     {
+
+
         // GET: api/<ValuesController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        [Route("getcustomers")]
+        public List<Customer> getCustomers()
         {
-            return new string[] { "value1", "value2" };
+            E_CommerceDbContext db = new E_CommerceDbContext();
+
+            return db.Customers.ToList();
         }
 
-        // GET api/<ValuesController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<ValuesController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        [Route("addcustomer")]
+        public string addCustomer(Customer customer)
         {
-        }
+            E_CommerceDbContext db = new E_CommerceDbContext();
 
-        // PUT api/<ValuesController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+            if(customer == null) {
+                return "Customer is null";
+            }
+            else
+            {
+                db.Customers.Add(customer);
+                db.SaveChanges();
+                return "Customer added successfully";
+            }
 
-        // DELETE api/<ValuesController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }

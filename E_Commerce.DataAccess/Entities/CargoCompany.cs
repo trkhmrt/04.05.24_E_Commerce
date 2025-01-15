@@ -8,6 +8,7 @@ namespace E_Commerce.DataAccess.Entities
 {
     public class CargoCompany
     {
-
+        public int CargoCompanyID { get; set; }
+        public int CargoCompanyName{ get; set; }
     }
 }

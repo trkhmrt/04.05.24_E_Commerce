@@ -9,5 +9,10 @@ namespace E_Commerce.DataAccess.Entities
     public class Tax
     {
 
+        public int taxId { get; set; }
+
+        public int taxValue { get; set; }
+
+
     }
 }

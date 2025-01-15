@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace E_Commerce.DataAccess.Entities
 {
-    public class Adress
+    public class Category
     {
-
+        public int categoryId { get; set; }
+        public string categoryName { get; set; }
     }
 }

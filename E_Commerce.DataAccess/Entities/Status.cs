@@ -8,6 +8,9 @@ namespace E_Commerce.DataAccess.Entities
 {
     public class Status
     {
+        public int statusId { get; set; }
+        public string statusDescription { get; set; }
+
 
     }
 }

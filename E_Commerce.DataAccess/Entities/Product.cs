@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace E_Commerce.DataAccess.Entities
 {
-    internal class Product
+    public class Product
     {
-
+        public int productId { get; set; }
+        public int categoryId { get; set; }
+        public int price { get; set; }
+        public string productName { get; set; }
+        public string productDescription { get; set; }
+        public int discountValue { get; set; }
+        public int subCagetory { get; set; }
+        public int taxId { get; set; }
     }
 }

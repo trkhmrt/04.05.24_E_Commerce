@@ -8,6 +8,16 @@ namespace E_Commerce.DataAccess.Entities
 {
     public class Payment
     {
-            
+        public int paymentId { get; set; }
+
+        public int paymentAmount { get; set; }
+
+        public int customerId { get; set; }
+
+        public int cardNumber { get; set; }
+
+
+      
+
     }
 }

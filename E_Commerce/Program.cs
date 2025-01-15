@@ -1,4 +1,6 @@
 
+using E_Commerce.DataAccess.Context;
+
 namespace E_Commerce
 {
     public class Program
@@ -10,6 +12,8 @@ namespace E_Commerce
             // Add services to the container.
 
             builder.Services.AddControllers();
+
+            builder.Services.AddDbContext<E_CommerceDbContext>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

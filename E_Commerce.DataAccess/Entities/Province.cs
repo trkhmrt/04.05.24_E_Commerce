@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace E_Commerce.DataAccess.Entities
 {
-    public class City
+    public class Province
     {
+        public int provinceId { get; set; }
+
+        public string provinceName { get; set; }
 
     }
 }

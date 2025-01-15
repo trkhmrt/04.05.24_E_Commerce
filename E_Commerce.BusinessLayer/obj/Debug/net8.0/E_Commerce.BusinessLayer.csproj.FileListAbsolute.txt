@@ -1,0 +1,12 @@
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\bin\Debug\net8.0\E_Commerce.BusinessLayer.deps.json
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\bin\Debug\net8.0\E_Commerce.BusinessLayer.dll
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\bin\Debug\net8.0\E_Commerce.BusinessLayer.pdb
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\obj\Debug\net8.0\E_Commerce.BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\obj\Debug\net8.0\E_Commerce.BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\obj\Debug\net8.0\E_Commerce.BusinessLayer.AssemblyInfo.cs
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\obj\Debug\net8.0\E_Commerce.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\obj\Debug\net8.0\E_Commerce.BusinessLayer.sourcelink.json
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\obj\Debug\net8.0\E_Commerce.BusinessLayer.dll
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\obj\Debug\net8.0\refint\E_Commerce.BusinessLayer.dll
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\obj\Debug\net8.0\E_Commerce.BusinessLayer.pdb
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\obj\Debug\net8.0\ref\E_Commerce.BusinessLayer.dll

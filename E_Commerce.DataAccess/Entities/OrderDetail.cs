@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace E_Commerce.DataAccess.Entities
 {
-    internal class OrderDetail
+    public class OrderDetail
     {
+        public int OrderDetailID { get; set; }
 
-     
+        public int OrderID { get; set; }
 
+        public int ProductID { get; set; }
+
+        public int ProductAmount { get; set; }
 
     }
 }

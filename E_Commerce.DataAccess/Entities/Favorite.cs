@@ -8,6 +8,9 @@ namespace E_Commerce.DataAccess.Entities
 {
     public class Favorite
     {
+        public int FavoriteID { get; set; }
+
+        public int FavoriteProductID { get; set; }
 
 
     }
