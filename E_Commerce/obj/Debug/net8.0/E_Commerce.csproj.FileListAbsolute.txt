@@ -80,3 +80,4 @@ C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce\bin\Debug\net8.0\
 C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce\bin\Debug\net8.0\E_Commerce.DataAccess.dll
 C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce\bin\Debug\net8.0\E_Commerce.BusinessLayer.pdb
 C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce\bin\Debug\net8.0\E_Commerce.DataAccess.pdb
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce\bin\Debug\net8.0\Newtonsoft.Json.dll

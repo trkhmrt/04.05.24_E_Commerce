@@ -182,7 +182,8 @@ namespace E_Commerce.DataAccess.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(3)
+                        .HasColumnType("nvarchar(3)");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
@@ -203,19 +204,6 @@ namespace E_Commerce.DataAccess.Migrations
                     b.HasKey("CustomerID");
 
                     b.ToTable("Customers");
-
-                    b.HasData(
-                        new
-                        {
-                            CustomerID = 1,
-                            ActivateStatusID = 1,
-                            ActiveAddressID = 1,
-                            Email = "trkhamarat@gmail.com",
-                            FirstName = "Ali",
-                            LastName = "Veli",
-                            Password = "123456",
-                            UserName = "aliveli"
-                        });
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Entities.Favorite", b =>
@@ -398,13 +386,6 @@ namespace E_Commerce.DataAccess.Migrations
                     b.HasKey("statusId");
 
                     b.ToTable("Statuses");
-
-                    b.HasData(
-                        new
-                        {
-                            statusId = 1,
-                            statusDescription = "User Active"
-                        });
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Entities.SubCategory", b =>

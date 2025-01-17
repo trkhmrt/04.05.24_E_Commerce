@@ -7,12 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\E_Commerce.BusinessLayer\E_Commerce.BusinessLayer.csproj" />
     <ProjectReference Include="..\E_Commerce.DataAccess\E_Commerce.DataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="InFrustracture\Middleware\" />
+    <Folder Include="InFrustracture\Filter\" />
+    <Folder Include="InFrustracture\Extensions\" />
   </ItemGroup>
 
 </Project>

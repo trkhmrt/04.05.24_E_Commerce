@@ -21,5 +21,7 @@ namespace E_Commerce.DataAccess.Entities
         public int TaxID { get; set; }
 
 
+
+
     }
 }
