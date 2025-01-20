@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BBOitKZt9EQ=",
+  "dgSpecHash": "JGM4VGgokbM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_commerce.DataAccess\\E_Commerce.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\boyut\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\boyut\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

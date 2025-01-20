@@ -3,29 +3,85 @@
   "WorkspaceRootPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\extensions\\seeddatacreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7CD9B33-9EC6-4CA7-8A50-BCB0BD243A4C}|..\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.businesslayer\\services\\basketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\migrations\\20250115191351_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\migrations\\20250120194216_basketdetailproductid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\migrations\\20250117193306_seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\migrations\\20250117193428_seeddata2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\context\\e_commercedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\basketdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce\\controller\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|solutionrelative:controller\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7CD9B33-9EC6-4CA7-8A50-BCB0BD243A4C}|..\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.businesslayer\\interfaces\\ibasketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7CD9B33-9EC6-4CA7-8A50-BCB0BD243A4C}|..\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.businesslayer\\responsedto\\basketreponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7CD9B33-9EC6-4CA7-8A50-BCB0BD243A4C}|..\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.businesslayer\\e_commerce.businesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce\\infrustracture\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|solutionrelative:infrustracture\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\e_commerce.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce\\e_commerce.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|solutionrelative:e_commerce.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\extensions\\seeddatacreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\basketstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\tax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\context\\e_commercedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce\\controller\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|solutionrelative:controller\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\subcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\productdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce\\dtos\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|solutionrelative:dtos\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -33,10 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce\\controller\\basketdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|solutionrelative:controller\\basketdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce\\controller\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|solutionrelative:controller\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce\\controller\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,16 +103,6 @@
       "RelativeMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|solutionrelative:e_commerce.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7CD9B33-9EC6-4CA7-8A50-BCB0BD243A4C}|..\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.businesslayer\\e_commerce.businesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce\\dtos\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|solutionrelative:dtos\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -68,32 +110,10 @@
       "RelativeMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\tax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\productdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\subcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\province.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -103,12 +123,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\cargocompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\entities\\basketdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B69564B-B6A6-4694-9451-4E84207E0BAD}|..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce.dataaccess\\e_commerce.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0A887D4-271F-43DB-AD7C-EF8B78464B2A}|E_Commerce.csproj|c:\\users\\boyut\\documents\\github\\04.05.24_e_commerce\\e_commerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -122,206 +136,297 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20250117193428_SeedData2.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Migrations\\20250117193428_SeedData2.cs",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Migrations\\20250117193428_SeedData2.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Migrations\\20250117193428_SeedData2.cs",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Migrations\\20250117193428_SeedData2.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBEAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "20250120194216_BasketDetailProductId.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Migrations\\20250120194216_BasketDetailProductId.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Migrations\\20250120194216_BasketDetailProductId.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Migrations\\20250120194216_BasketDetailProductId.cs",
+              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Migrations\\20250120194216_BasketDetailProductId.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T19:34:31.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20250117193306_SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Migrations\\20250117193306_SeedData.cs",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Migrations\\20250117193306_SeedData.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Migrations\\20250117193306_SeedData.cs",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Migrations\\20250117193306_SeedData.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwBwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T19:33:16.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BasketDetailController.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\BasketDetailController.cs",
-              "RelativeDocumentMoniker": "Controller\\BasketDetailController.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\BasketDetailController.cs",
-              "RelativeToolTip": "Controller\\BasketDetailController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T19:19:14.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BasketController.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\BasketController.cs",
-              "RelativeDocumentMoniker": "Controller\\BasketController.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\BasketController.cs",
-              "RelativeToolTip": "Controller\\BasketController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T19:18:41.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Favorite.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Favorite.cs",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Favorite.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Favorite.cs",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Favorite.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T19:15:07.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Order.cs",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Order.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Order.cs",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T19:00:21.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Basket.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Basket.cs",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Basket.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Basket.cs",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Basket.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:55:54.964Z",
+              "WhenOpened": "2025-01-20T19:42:29.189Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SeedDataCreator.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Extensions\\SeedDataCreator.cs",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Extensions\\SeedDataCreator.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Extensions\\SeedDataCreator.cs*",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Extensions\\SeedDataCreator.cs*",
-              "ViewState": "AgIAADoAAAAAAAAAAAAgwCwAAAAMAAAAAAAAAA==",
+              "Title": "BasketService.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\Services\\BasketService.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.BusinessLayer\\Services\\BasketService.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\Services\\BasketService.cs",
+              "RelativeToolTip": "..\\E_Commerce.BusinessLayer\\Services\\BasketService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T19:00:07.072Z",
+              "WhenOpened": "2025-01-20T18:36:05.561Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20250115191351_Initial.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Migrations\\20250115191351_Initial.cs",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Migrations\\20250115191351_Initial.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Migrations\\20250115191351_Initial.cs",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Migrations\\20250115191351_Initial.cs",
-              "ViewState": "AgIAAL4AAAAAAAAAAAAgwM4AAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T19:13:58.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\CustomerController.cs",
-              "RelativeDocumentMoniker": "Controller\\CustomerController.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\CustomerController.cs",
-              "RelativeToolTip": "Controller\\CustomerController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAowEAAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:47:37.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\OrderController.cs",
-              "RelativeDocumentMoniker": "Controller\\OrderController.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\OrderController.cs",
-              "RelativeToolTip": "Controller\\OrderController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T19:19:59.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 17,
               "Title": "E_CommerceDbContext.cs",
               "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Context\\E_CommerceDbContext.cs",
               "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Context\\E_CommerceDbContext.cs",
               "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Context\\E_CommerceDbContext.cs",
               "RelativeToolTip": "..\\E_Commerce.DataAccess\\Context\\E_CommerceDbContext.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAA7wDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T18:54:13.121Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "OrderDetailController.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\OrderDetailController.cs",
-              "RelativeDocumentMoniker": "Controller\\OrderDetailController.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\OrderDetailController.cs",
-              "RelativeToolTip": "Controller\\OrderDetailController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "SeedDataCreator.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Extensions\\SeedDataCreator.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Extensions\\SeedDataCreator.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Extensions\\SeedDataCreator.cs",
+              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Extensions\\SeedDataCreator.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAIA0wBgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T19:20:42.564Z",
+              "WhenOpened": "2025-01-15T19:00:07.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "E_Commerce.BusinessLayer.csproj",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj",
+              "RelativeDocumentMoniker": "..\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj",
+              "RelativeToolTip": "..\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-13T18:51:34.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BasketController.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\BasketController.cs",
+              "RelativeDocumentMoniker": "Controller\\BasketController.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\BasketController.cs",
+              "RelativeToolTip": "Controller\\BasketController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAQwEIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T19:18:41.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Product.cs",
+              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Product.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:55:44.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\InFrustracture\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "InFrustracture\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\InFrustracture\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "InFrustracture\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T18:25:09.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Customer.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Customer.cs",
+              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Customer.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAADwvxsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T19:28:43.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BasketDetail.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\BasketDetail.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\BasketDetail.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\BasketDetail.cs",
+              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\BasketDetail.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T19:29:01.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Basket.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Basket.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Basket.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Basket.cs",
+              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Basket.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:55:54.964Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "ResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Dtos\\ResponseDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\ResponseDto.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Dtos\\ResponseDto.cs",
-              "RelativeToolTip": "Dtos\\ResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Title": "BasketStatus.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\BasketStatus.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\BasketStatus.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\BasketStatus.cs",
+              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\BasketStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:46:32.63Z",
+              "WhenOpened": "2025-01-20T16:49:09.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-17T16:53:59.944Z",
+              "DocumentIndex": 7,
+              "Title": "IBasketService.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\Interfaces\\IBasketService.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.BusinessLayer\\Interfaces\\IBasketService.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\Interfaces\\IBasketService.cs",
+              "RelativeToolTip": "..\\E_Commerce.BusinessLayer\\Interfaces\\IBasketService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T18:32:49.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BasketReponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\ResponseDto\\BasketReponseDto.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.BusinessLayer\\ResponseDto\\BasketReponseDto.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\ResponseDto\\BasketReponseDto.cs",
+              "RelativeToolTip": "..\\E_Commerce.BusinessLayer\\ResponseDto\\BasketReponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T18:51:14.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "E_Commerce.http",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\E_Commerce.http",
+              "RelativeDocumentMoniker": "E_Commerce.http",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\E_Commerce.http",
+              "RelativeToolTip": "E_Commerce.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-01-20T18:30:30.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "E_Commerce.DataAccess.csproj",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj",
+              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj",
+              "RelativeToolTip": "..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-13T18:51:03.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SubCategory.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\SubCategory.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\SubCategory.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\SubCategory.cs",
+              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\SubCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T18:50:04.779Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "ProductDetail.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\ProductDetail.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\ProductDetail.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\ProductDetail.cs",
+              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\ProductDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T19:17:34.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:47:05.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Order.cs",
+              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Order.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T19:00:21.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Controller\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\CustomerController.cs",
+              "RelativeToolTip": "Controller\\CustomerController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAMwBMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:47:37.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Tax.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Tax.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Tax.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Tax.cs",
+              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Tax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T19:31:09.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "Address.cs",
               "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Address.cs",
               "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Address.cs",
@@ -334,111 +439,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Customer.cs",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Customer.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Customer.cs",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Customer.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBYAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 24,
+              "Title": "ResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Dtos\\ResponseDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\ResponseDto.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Dtos\\ResponseDto.cs",
+              "RelativeToolTip": "Dtos\\ResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T19:28:43.154Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Product.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Product.cs",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:55:44.257Z",
+              "WhenOpened": "2025-01-17T16:46:32.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "OrderDetail.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\OrderDetail.cs",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\OrderDetail.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\OrderDetail.cs",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\OrderDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Title": "Favorite.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Favorite.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Favorite.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Favorite.cs",
+              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Favorite.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T19:03:48.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T19:15:07.595Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "E_Commerce.BusinessLayer.csproj",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj",
-              "RelativeDocumentMoniker": "..\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj",
-              "RelativeToolTip": "..\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-13T18:51:34.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Coupon.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Coupon.cs",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Coupon.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Coupon.cs",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Coupon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:56:26.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "E_Commerce.csproj",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\E_Commerce.csproj",
-              "RelativeDocumentMoniker": "E_Commerce.csproj",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\E_Commerce.csproj",
-              "RelativeToolTip": "E_Commerce.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-13T18:47:09.378Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Category.cs",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Category.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Category.cs",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T18:49:15.504Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:47:05.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "Status.cs",
               "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Status.cs",
               "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Status.cs",
@@ -452,45 +478,103 @@
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "ProductDetail.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\ProductDetail.cs",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\ProductDetail.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\ProductDetail.cs",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\ProductDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Title": "BasketDetailController.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\BasketDetailController.cs",
+              "RelativeDocumentMoniker": "Controller\\BasketDetailController.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\BasketDetailController.cs",
+              "RelativeToolTip": "Controller\\BasketDetailController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T19:17:34.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Tax.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Tax.cs",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Tax.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Tax.cs",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Tax.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T19:31:09.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T19:19:14.368Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "SubCategory.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\SubCategory.cs",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\SubCategory.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\SubCategory.cs",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\SubCategory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controller\\OrderController.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\OrderController.cs",
+              "RelativeToolTip": "Controller\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T18:50:04.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T19:19:59.701Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
+              "Title": "OrderDetailController.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\OrderDetailController.cs",
+              "RelativeDocumentMoniker": "Controller\\OrderDetailController.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Controller\\OrderDetailController.cs",
+              "RelativeToolTip": "Controller\\OrderDetailController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T19:20:42.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-17T16:53:59.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\OrderDetail.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\OrderDetail.cs",
+              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\OrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T19:03:48.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Coupon.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Coupon.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Coupon.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Coupon.cs",
+              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Coupon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:56:26.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "E_Commerce.csproj",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\E_Commerce.csproj",
+              "RelativeDocumentMoniker": "E_Commerce.csproj",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\E_Commerce.csproj",
+              "RelativeToolTip": "E_Commerce.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-13T18:47:09.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Category.cs",
+              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T18:49:15.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
               "Title": "Province.cs",
               "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Province.cs",
               "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Province.cs",
@@ -498,12 +582,11 @@
               "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Province.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T19:21:34.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T19:21:34.198Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "Payment.cs",
               "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\Payment.cs",
               "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\Payment.cs",
@@ -511,12 +594,11 @@
               "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\Payment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:59:33.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T18:59:33.868Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "CargoCompany.cs",
               "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\CargoCompany.cs",
               "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\CargoCompany.cs",
@@ -524,38 +606,11 @@
               "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\CargoCompany.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:58:48.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T18:58:48.764Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "BasketDetail.cs",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\BasketDetail.cs",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\Entities\\BasketDetail.cs",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\Entities\\BasketDetail.cs",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\Entities\\BasketDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T19:29:01.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "E_Commerce.DataAccess.csproj",
-              "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj",
-              "RelativeDocumentMoniker": "..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj",
-              "ToolTip": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj",
-              "RelativeToolTip": "..\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-13T18:51:03.04Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -563,8 +618,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-13T19:34:13.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T19:34:13.753Z"
             }
           ]
         }

@@ -74,44 +74,125 @@ namespace E_Commerce.DataAccess.Migrations
                     b.Property<int>("TotalQuantity")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserID")
+                    b.Property<int>("basketStatusId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("customerId")
                         .HasColumnType("int");
 
                     b.HasKey("BasketID");
 
                     b.ToTable("Baskets");
+
+                    b.HasData(
+                        new
+                        {
+                            BasketID = 9000,
+                            CouponCode = "",
+                            TaxID = 1,
+                            TotalPrice = 100,
+                            TotalQuantity = 1,
+                            basketStatusId = 1,
+                            customerId = 34790
+                        },
+                        new
+                        {
+                            BasketID = 9002,
+                            CouponCode = "",
+                            TaxID = 1,
+                            TotalPrice = 300,
+                            TotalQuantity = 1,
+                            basketStatusId = 1,
+                            customerId = 43125
+                        });
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Entities.BasketDetail", b =>
                 {
-                    b.Property<int>("BasketDetailID")
+                    b.Property<int>("basketDetailId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BasketDetailID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("basketDetailId"));
 
-                    b.Property<int>("BasketID")
+                    b.Property<int>("basketId")
                         .HasColumnType("int");
 
-                    b.Property<string>("CategoryID")
+                    b.Property<int>("categoryId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("productId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("productName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ProductName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("productPrice")
+                        .HasColumnType("int");
 
-                    b.Property<string>("ProductPrice")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("productQuantity")
+                        .HasColumnType("int");
 
-                    b.Property<string>("ProductQuantity")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("BasketDetailID");
+                    b.HasKey("basketDetailId");
 
                     b.ToTable("BasketDetails");
+
+                    b.HasData(
+                        new
+                        {
+                            basketDetailId = 2000,
+                            basketId = 1,
+                            categoryId = 1,
+                            productId = 0,
+                            productName = "Oduncu Gömlek",
+                            productPrice = 100,
+                            productQuantity = 1
+                        },
+                        new
+                        {
+                            basketDetailId = 2001,
+                            basketId = 1,
+                            categoryId = 2,
+                            productId = 0,
+                            productName = "Su geçirmez Bot",
+                            productPrice = 100,
+                            productQuantity = 1
+                        });
+                });
+
+            modelBuilder.Entity("E_Commerce.DataAccess.Entities.BasketStatus", b =>
+                {
+                    b.Property<int>("basketStatusId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("basketStatusId"));
+
+                    b.Property<string>("basketStatusDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("basketStatusId");
+
+                    b.ToTable("BasketStatuses");
+
+                    b.HasData(
+                        new
+                        {
+                            basketStatusId = 1,
+                            basketStatusDescription = "Basket Active"
+                        },
+                        new
+                        {
+                            basketStatusId = 2,
+                            basketStatusDescription = "Basket Ready for Payment"
+                        },
+                        new
+                        {
+                            basketStatusId = 3,
+                            basketStatusDescription = "Basket Canceled"
+                        });
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Entities.CargoCompany", b =>
@@ -145,6 +226,18 @@ namespace E_Commerce.DataAccess.Migrations
                     b.HasKey("categoryId");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            categoryId = 1,
+                            categoryName = "Üst Giyim"
+                        },
+                        new
+                        {
+                            categoryId = 2,
+                            categoryName = "Ayakkabı"
+                        });
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Entities.Coupon", b =>
@@ -168,11 +261,11 @@ namespace E_Commerce.DataAccess.Migrations
 
             modelBuilder.Entity("E_Commerce.DataAccess.Entities.Customer", b =>
                 {
-                    b.Property<int>("CustomerID")
+                    b.Property<int>("customerId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CustomerID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("customerId"));
 
                     b.Property<int>("ActivateStatusID")
                         .HasColumnType("int");
@@ -182,8 +275,7 @@ namespace E_Commerce.DataAccess.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasMaxLength(3)
-                        .HasColumnType("nvarchar(3)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
@@ -201,9 +293,33 @@ namespace E_Commerce.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("CustomerID");
+                    b.HasKey("customerId");
 
                     b.ToTable("Customers");
+
+                    b.HasData(
+                        new
+                        {
+                            customerId = 34790,
+                            ActivateStatusID = 1,
+                            ActiveAddressID = 1,
+                            Email = "aliveli@gmail.com",
+                            FirstName = "Ali",
+                            LastName = "Veli",
+                            Password = "123456",
+                            UserName = "aliveli"
+                        },
+                        new
+                        {
+                            customerId = 43125,
+                            ActivateStatusID = 1,
+                            ActiveAddressID = 1,
+                            Email = "trkhamarat@gmail.com",
+                            FirstName = "Tarık",
+                            LastName = "Hamarat",
+                            Password = "123456",
+                            UserName = "trkhmrt"
+                        });
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Entities.Favorite", b =>
@@ -305,16 +421,20 @@ namespace E_Commerce.DataAccess.Migrations
                     b.Property<int>("discountValue")
                         .HasColumnType("int");
 
-                    b.Property<int>("price")
-                        .HasColumnType("int");
-
                     b.Property<string>("productDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("productImage")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("productName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("productPrice")
+                        .HasColumnType("int");
 
                     b.Property<int>("subCagetory")
                         .HasColumnType("int");
@@ -325,6 +445,32 @@ namespace E_Commerce.DataAccess.Migrations
                     b.HasKey("productId");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            productId = 1400,
+                            categoryId = 1,
+                            discountValue = 0,
+                            productDescription = "Ouncu Gömlek",
+                            productImage = "Product 1 Image",
+                            productName = "Gömlek",
+                            productPrice = 100,
+                            subCagetory = 1,
+                            taxId = 0
+                        },
+                        new
+                        {
+                            productId = 1720,
+                            categoryId = 2,
+                            discountValue = 0,
+                            productDescription = "Su geçirmez ayakkabı",
+                            productImage = "Product 1 Image",
+                            productName = "Ayakkabı",
+                            productPrice = 100,
+                            subCagetory = 2,
+                            taxId = 0
+                        });
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Entities.ProductDetail", b =>
@@ -386,25 +532,47 @@ namespace E_Commerce.DataAccess.Migrations
                     b.HasKey("statusId");
 
                     b.ToTable("Statuses");
+
+                    b.HasData(
+                        new
+                        {
+                            statusId = 1,
+                            statusDescription = "User Active"
+                        });
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Entities.SubCategory", b =>
                 {
-                    b.Property<int>("subcategoryId")
+                    b.Property<int>("subCategoryId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("subcategoryId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("subCategoryId"));
+
+                    b.Property<string>("subCategoryName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("subcategoryCategoryId")
                         .HasColumnType("int");
 
-                    b.Property<int>("subcategoryName")
-                        .HasColumnType("int");
-
-                    b.HasKey("subcategoryId");
+                    b.HasKey("subCategoryId");
 
                     b.ToTable("SubCategories");
+
+                    b.HasData(
+                        new
+                        {
+                            subCategoryId = 1,
+                            subCategoryName = "Gömlek",
+                            subcategoryCategoryId = 1
+                        },
+                        new
+                        {
+                            subCategoryId = 2,
+                            subCategoryName = "Bot",
+                            subcategoryCategoryId = 2
+                        });
                 });
 
             modelBuilder.Entity("E_Commerce.DataAccess.Entities.Tax", b =>

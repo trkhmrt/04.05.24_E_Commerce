@@ -1089,6 +1089,9 @@
       "E_Commerce.BusinessLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "E_Commerce.DataAccess": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/E_Commerce.BusinessLayer.dll": {}
         },

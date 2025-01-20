@@ -47,6 +47,7 @@ namespace E_Commerce.DataAccess.Context
         public DbSet<Province> Provinces { get; set; }
         public DbSet<Status> Statuses { get; set; }
         public DbSet<Address> Addresses { get; set; }
+        public DbSet<BasketStatus> BasketStatuses { get; set; }
 
 
 

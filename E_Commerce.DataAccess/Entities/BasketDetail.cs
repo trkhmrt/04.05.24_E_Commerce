@@ -8,11 +8,13 @@ namespace E_Commerce.DataAccess.Entities
 {
     public class BasketDetail
     {
-        public int BasketDetailID { get; set; }
-        public int BasketID { get; set; }
-        public string ProductName { get; set; }
-        public string ProductPrice { get; set; }
-        public string ProductQuantity { get; set; }
-        public string CategoryID { get; set; }
+        public int basketDetailId { get; set; }
+        public int basketId { get; set; }
+        public string productName { get; set; }
+        public int productPrice { get; set; }
+        public int productQuantity { get; set; }
+        public int categoryId { get; set; }
+
+        public int productId { get; set; }
     }
 }

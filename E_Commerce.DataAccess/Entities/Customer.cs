@@ -9,12 +9,12 @@ namespace E_Commerce.DataAccess.Entities
 {
     public class Customer
     {
-        public int CustomerID { get; set; }
+        public int customerId { get; set; }
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string UserName { get; set; }
-        [StringLength(3,ErrorMessage ="3 karakterden uzun olamaz")]
+      
         public string Email { get; set; }
         public string Password { get; set; }
 
@@ -24,5 +24,7 @@ namespace E_Commerce.DataAccess.Entities
         public int ActivateStatusID { get; set; }
 
 
+
+       
     }
 }

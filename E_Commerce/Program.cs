@@ -1,5 +1,6 @@
 
 using E_Commerce.DataAccess.Context;
+using E_Commerce.InFrustracture.Extensions;
 
 namespace E_Commerce
 {
@@ -12,7 +13,7 @@ namespace E_Commerce
             // Add services to the container.
 
             builder.Services.AddControllers();
-
+            builder.Services.AddServices();
             builder.Services.AddDbContext<E_CommerceDbContext>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

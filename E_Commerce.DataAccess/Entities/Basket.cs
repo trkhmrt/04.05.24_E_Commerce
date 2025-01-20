@@ -10,7 +10,7 @@ namespace E_Commerce.DataAccess.Entities
     {
         public int BasketID { get; set; }
 
-        public int UserID { get; set; }
+        public int customerId { get; set; }
 
         public int TotalPrice { get; set; }
 
@@ -20,7 +20,7 @@ namespace E_Commerce.DataAccess.Entities
 
         public int TaxID { get; set; }
 
-
+        public int basketStatusId  {get; set; }
 
 
     }

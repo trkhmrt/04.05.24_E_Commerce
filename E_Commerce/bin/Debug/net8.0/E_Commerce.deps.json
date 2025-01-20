@@ -607,6 +607,9 @@
         }
       },
       "E_Commerce.BusinessLayer/1.0.0": {
+        "dependencies": {
+          "E_Commerce.DataAccess": "1.0.0"
+        },
         "runtime": {
           "E_Commerce.BusinessLayer.dll": {
             "assemblyVersion": "1.0.0",

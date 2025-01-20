@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_commerce.DataAccess\\E_Commerce.DataAccess.csproj": {}
+    "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_commerce.DataAccess\\E_Commerce.DataAccess.csproj": {
+    "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_commerce.DataAccess\\E_Commerce.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj",
         "projectName": "E_Commerce.DataAccess",
-        "projectPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_commerce.DataAccess\\E_Commerce.DataAccess.csproj",
+        "projectPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj",
         "packagesPath": "C:\\Users\\boyut\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_commerce.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\boyut\\AppData\\Roaming\\NuGet\\NuGet.Config",

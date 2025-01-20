@@ -28,7 +28,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -10,3 +10,7 @@ C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\obj
 C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\obj\Debug\net8.0\refint\E_Commerce.BusinessLayer.dll
 C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\obj\Debug\net8.0\E_Commerce.BusinessLayer.pdb
 C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\obj\Debug\net8.0\ref\E_Commerce.BusinessLayer.dll
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\bin\Debug\net8.0\E_Commerce.DataAccess.dll
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\bin\Debug\net8.0\E_Commerce.DataAccess.pdb
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\obj\Debug\net8.0\E_Commerce.BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce.BusinessLayer\obj\Debug\net8.0\E_Commer.FE237E69.Up2Date

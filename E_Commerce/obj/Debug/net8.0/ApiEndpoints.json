@@ -1,24 +1,45 @@
 [
   {
-    "ContainingType": "E_Commerce.Controller.CustomerController",
-    "Method": "addCustomer",
-    "RelativePath": "Customer/addcustomer",
+    "ContainingType": "E_Commerce.Controller.BasketController",
+    "Method": "addBasket",
+    "RelativePath": "Basket/addBasket/{customerId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "customer",
-        "Type": "E_Commerce.DataAccess.Entities.Customer",
+        "Name": "products",
+        "Type": "System.Collections.Generic.List\u00601[[E_Commerce.DataAccess.Entities.Product, E_Commerce.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      },
+      {
+        "Name": "customerId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "E_Commerce.Controller.CustomerController",
-    "Method": "getCustomerById",
-    "RelativePath": "Customer/getcustomerbyid/{customerId}",
+    "ContainingType": "E_Commerce.Controller.BasketController",
+    "Method": "getBasketByBasketId",
+    "RelativePath": "Basket/getBasketByBasketId/{basketId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "basketId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_Commerce.Controller.BasketController",
+    "Method": "getBasketByCustomerId",
+    "RelativePath": "Basket/getBasketByCustomerId/{customerId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -32,23 +53,13 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "E_Commerce.Controller.CustomerController",
-    "Method": "getCustomers",
-    "RelativePath": "Customer/getcustomers",
+    "ContainingType": "E_Commerce.Controller.BasketController",
+    "Method": "getBaskets",
+    "RelativePath": "Basket/getBaskets",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[E_Commerce.DataAccess.Entities.Customer, E_Commerce.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   }
 ]
