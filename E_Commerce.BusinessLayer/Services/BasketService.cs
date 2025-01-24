@@ -2,6 +2,7 @@
 using E_Commerce.BusinessLayer.ResponseDto;
 using E_Commerce.DataAccess.Context;
 using E_Commerce.DataAccess.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,8 +26,9 @@ namespace E_Commerce.BusinessLayer.Services
             _context = context;
         }
 
-        public BasketReponseDto addBasket(List<Product> products,int customerId)
+        public BasketReponseDto addBasket(List<ProductDto> products,int customerId)
         {
+
             var founded_basket = _context.Baskets.FirstOrDefault(b => b.customerId == customerId && b.basketStatusId == 1);
 
             if (founded_basket != null)
@@ -34,25 +36,32 @@ namespace E_Commerce.BusinessLayer.Services
                 /*
                  BasketId
                  */
+                List<ProductDto> basket_products = new List<ProductDto>();
 
-                var counter = 0;
-
+                basket_products.AddRange(products);
+               
                 var founded_basket_details = _context.BasketDetails.Where(bd => bd.basketId == founded_basket.BasketID).ToList();
 
-                for (int i = 0; i < founded_basket_details.Count; i++)
+               
+                for (int i = 0; i < founded_basket_details.Count; i++) 
                 {
-                    if(founded_basket_details[i].productId == products[i].productId)
+                    for(int j = 0; j< basket_products.Count; j++)
                     {
-                        founded_basket_details[i].productQuantity += 1;
-                        _context.BasketDetails.Update(founded_basket_details[i]);
-                        _context.SaveChanges();
+                        if (founded_basket_details[i].productId == basket_products[j].productId)
+                        {
+                            founded_basket_details[i].productQuantity += basket_products[j].productQuantity;
+                            _context.BasketDetails.Update(founded_basket_details[i]);
+                            _context.SaveChanges();
+
+                            basket_products.RemoveAt(j);
+                        }
+                    }
+
+                    if (basket_products.Count == 0)
+                    {
+                        break;
                     }
                 }
-
-           
-
-
-
 
                 return null;
             }
@@ -64,6 +73,36 @@ namespace E_Commerce.BusinessLayer.Services
 
 
         }
+
+        public bool changeBasketStatus(BasketStatusChangeDto basketStatusChangeDto)
+        {
+
+            // ProcessId 1 -> Approve basket  ProccessId 2 -> Cancel basket 
+            var founded_basket = _context.Baskets.FirstOrDefault(b => b.customerId == basketStatusChangeDto.customerId && b.basketStatusId == 1);
+
+
+            if (basketStatusChangeDto.proccessTypeId == 1)
+            {
+                founded_basket.basketStatusId = 2;
+            }
+            else if(basketStatusChangeDto.proccessTypeId == 2)
+            {
+                founded_basket.basketStatusId = 3;
+            }
+
+
+            _context.Baskets.Update(founded_basket);
+            _context.SaveChanges();
+
+            return true;
+
+
+
+        }
+     
+
+
+
 
         public BasketReponseDto getBasketByBasketId(int basketId)
         {

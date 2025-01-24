@@ -11,9 +11,14 @@ namespace E_Commerce.BusinessLayer.Interfaces
     public interface IBasketService
     {
 
-        BasketReponseDto addBasket(List<Product> products,int customerId);
+        BasketReponseDto addBasket(List<ProductDto> products,int customerId);
         List<Basket> getBaskets();
         BasketReponseDto getBasketByBasketId(int basketId);
         BasketReponseDto getBasketByCustomerId(int customerId);
+        bool changeBasketStatus(BasketStatusChangeDto basketStatusChangeDto);
+      
+
+
+
     }
 }

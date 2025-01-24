@@ -7,5 +7,6 @@ namespace E_Commerce.Controller
     [ApiController]
     public class OrderDetailController : ControllerBase
     {
+            
     }
 }

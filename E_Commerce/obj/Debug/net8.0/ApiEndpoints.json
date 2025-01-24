@@ -9,12 +9,28 @@
     "Parameters": [
       {
         "Name": "products",
-        "Type": "System.Collections.Generic.List\u00601[[E_Commerce.DataAccess.Entities.Product, E_Commerce.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[E_Commerce.BusinessLayer.ResponseDto.ProductDto, E_Commerce.BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       },
       {
         "Name": "customerId",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_Commerce.Controller.BasketController",
+    "Method": "changeBasketStatus",
+    "RelativePath": "Basket/changeBasketStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "basketStatusChangeDto",
+        "Type": "E_Commerce.BusinessLayer.ResponseDto.BasketStatusChangeDto",
         "IsRequired": true
       }
     ],

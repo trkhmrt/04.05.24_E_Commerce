@@ -14,7 +14,6 @@ namespace E_Commerce.DataAccess.Entities
         public int productPrice { get; set; }
         public int productQuantity { get; set; }
         public int categoryId { get; set; }
-
         public int productId { get; set; }
     }
 }

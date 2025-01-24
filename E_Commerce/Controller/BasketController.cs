@@ -1,4 +1,5 @@
 ﻿using E_Commerce.BusinessLayer.Interfaces;
+using E_Commerce.BusinessLayer.ResponseDto;
 using E_Commerce.DataAccess.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -62,7 +63,7 @@ namespace E_Commerce.Controller
 
         [HttpPost]
         [Route("addBasket/{customerId}")]
-        public IActionResult addBasket(List<Product> products,int customerId)
+        public IActionResult addBasket(List<ProductDto> products,int customerId)
         {
             var basket = _basketService.addBasket(products,customerId);
 
@@ -73,6 +74,22 @@ namespace E_Commerce.Controller
 
             return Ok(basket);
         }
+
+
+        [HttpPost]
+        [Route("changeBasketStatus")]
+        public IActionResult changeBasketStatus(BasketStatusChangeDto basketStatusChangeDto)
+        {
+            var basket = _basketService.changeBasketStatus(basketStatusChangeDto);
+
+            if (basket)
+            {
+                return NotFound(basket);
+            }
+
+            return Ok(basket);
+        }
+
 
 
 
