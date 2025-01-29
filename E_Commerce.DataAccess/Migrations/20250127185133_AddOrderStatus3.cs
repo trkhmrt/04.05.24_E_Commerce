@@ -7,7 +7,7 @@
 namespace E_Commerce.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class AddOrderStatus3 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -39,7 +39,8 @@ namespace E_Commerce.DataAccess.Migrations
                     productName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     productPrice = table.Column<int>(type: "int", nullable: false),
                     productQuantity = table.Column<int>(type: "int", nullable: false),
-                    categoryId = table.Column<int>(type: "int", nullable: false)
+                    categoryId = table.Column<int>(type: "int", nullable: false),
+                    productId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -181,6 +182,19 @@ namespace E_Commerce.DataAccess.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "OrderStatuses",
+                columns: table => new
+                {
+                    orderStatusId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    statusName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_OrderStatuses", x => x.orderStatusId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Payments",
                 columns: table => new
                 {
@@ -188,7 +202,8 @@ namespace E_Commerce.DataAccess.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     paymentAmount = table.Column<int>(type: "int", nullable: false),
                     customerId = table.Column<int>(type: "int", nullable: false),
-                    cardNumber = table.Column<int>(type: "int", nullable: false)
+                    cardNumber = table.Column<int>(type: "int", nullable: false),
+                    basketId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -286,11 +301,12 @@ namespace E_Commerce.DataAccess.Migrations
 
             migrationBuilder.InsertData(
                 table: "BasketDetails",
-                columns: new[] { "basketDetailId", "basketId", "categoryId", "productName", "productPrice", "productQuantity" },
+                columns: new[] { "basketDetailId", "basketId", "categoryId", "productId", "productName", "productPrice", "productQuantity" },
                 values: new object[,]
                 {
-                    { 2000, 1, 1, "Oduncu Gömlek", 100, 1 },
-                    { 2001, 1, 2, "Su geçirmez Bot", 100, 1 }
+                    { 2000, 9000, 1, 1400, "Oduncu Gömlek", 100, 1 },
+                    { 2001, 9000, 1, 1400, "Su geçirmez Bot", 100, 1 },
+                    { 2002, 9002, 2, 1720, "Su geçirmez Bot", 100, 1 }
                 });
 
             migrationBuilder.InsertData(
@@ -300,7 +316,8 @@ namespace E_Commerce.DataAccess.Migrations
                 {
                     { 1, "Basket Active" },
                     { 2, "Basket Ready for Payment" },
-                    { 3, "Basket Canceled" }
+                    { 3, "Basket Canceled" },
+                    { 4, "Basket Paid" }
                 });
 
             migrationBuilder.InsertData(
@@ -328,6 +345,18 @@ namespace E_Commerce.DataAccess.Migrations
                 {
                     { 34790, 1, 1, "aliveli@gmail.com", "Ali", "Veli", "123456", "aliveli" },
                     { 43125, 1, 1, "trkhamarat@gmail.com", "Tarık", "Hamarat", "123456", "trkhmrt" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "OrderStatuses",
+                columns: new[] { "orderStatusId", "statusName" },
+                values: new object[,]
+                {
+                    { 1, "Order Active" },
+                    { 2, "Order Canceled" },
+                    { 3, "Order Preparing" },
+                    { 4, "Order On The Way" },
+                    { 5, "Order Delivered" }
                 });
 
             migrationBuilder.InsertData(
@@ -389,6 +418,9 @@ namespace E_Commerce.DataAccess.Migrations
 
             migrationBuilder.DropTable(
                 name: "Orders");
+
+            migrationBuilder.DropTable(
+                name: "OrderStatuses");
 
             migrationBuilder.DropTable(
                 name: "Payments");

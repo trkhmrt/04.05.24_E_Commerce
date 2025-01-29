@@ -8,10 +8,11 @@ using System.Threading.Tasks;
 
 namespace E_Commerce.BusinessLayer.Interfaces
 {
+
     public interface IBasketService
     {
 
-        BasketReponseDto addBasket(List<ProductDto> products,int customerId);
+        void addBasket(List<ProductDto> products,int customerId);
         List<Basket> getBaskets();
         BasketReponseDto getBasketByBasketId(int basketId);
         BasketReponseDto getBasketByCustomerId(int customerId);

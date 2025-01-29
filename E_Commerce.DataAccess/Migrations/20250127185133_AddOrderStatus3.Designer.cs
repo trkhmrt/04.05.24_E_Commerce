@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_Commerce.DataAccess.Migrations
 {
     [DbContext(typeof(E_CommerceDbContext))]
-    [Migration("20250120194216_BasketDetailProductId")]
-    partial class BasketDetailProductId
+    [Migration("20250127185133_AddOrderStatus3")]
+    partial class AddOrderStatus3
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -145,9 +145,9 @@ namespace E_Commerce.DataAccess.Migrations
                         new
                         {
                             basketDetailId = 2000,
-                            basketId = 1,
+                            basketId = 9000,
                             categoryId = 1,
-                            productId = 0,
+                            productId = 1400,
                             productName = "Oduncu Gömlek",
                             productPrice = 100,
                             productQuantity = 1
@@ -155,9 +155,19 @@ namespace E_Commerce.DataAccess.Migrations
                         new
                         {
                             basketDetailId = 2001,
-                            basketId = 1,
+                            basketId = 9000,
+                            categoryId = 1,
+                            productId = 1400,
+                            productName = "Su geçirmez Bot",
+                            productPrice = 100,
+                            productQuantity = 1
+                        },
+                        new
+                        {
+                            basketDetailId = 2002,
+                            basketId = 9002,
                             categoryId = 2,
-                            productId = 0,
+                            productId = 1720,
                             productName = "Su geçirmez Bot",
                             productPrice = 100,
                             productQuantity = 1
@@ -195,6 +205,11 @@ namespace E_Commerce.DataAccess.Migrations
                         {
                             basketStatusId = 3,
                             basketStatusDescription = "Basket Canceled"
+                        },
+                        new
+                        {
+                            basketStatusId = 4,
+                            basketStatusDescription = "Basket Paid"
                         });
                 });
 
@@ -388,6 +403,50 @@ namespace E_Commerce.DataAccess.Migrations
                     b.ToTable("OrderDetails");
                 });
 
+            modelBuilder.Entity("E_Commerce.DataAccess.Entities.OrderStatus", b =>
+                {
+                    b.Property<int>("orderStatusId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("orderStatusId"));
+
+                    b.Property<string>("statusName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("orderStatusId");
+
+                    b.ToTable("OrderStatuses");
+
+                    b.HasData(
+                        new
+                        {
+                            orderStatusId = 1,
+                            statusName = "Order Active"
+                        },
+                        new
+                        {
+                            orderStatusId = 2,
+                            statusName = "Order Canceled"
+                        },
+                        new
+                        {
+                            orderStatusId = 3,
+                            statusName = "Order Preparing"
+                        },
+                        new
+                        {
+                            orderStatusId = 4,
+                            statusName = "Order On The Way"
+                        },
+                        new
+                        {
+                            orderStatusId = 5,
+                            statusName = "Order Delivered"
+                        });
+                });
+
             modelBuilder.Entity("E_Commerce.DataAccess.Entities.Payment", b =>
                 {
                     b.Property<int>("paymentId")
@@ -395,6 +454,9 @@ namespace E_Commerce.DataAccess.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("paymentId"));
+
+                    b.Property<int>("basketId")
+                        .HasColumnType("int");
 
                     b.Property<int>("cardNumber")
                         .HasColumnType("int");

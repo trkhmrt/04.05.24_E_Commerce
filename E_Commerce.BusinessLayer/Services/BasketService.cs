@@ -26,9 +26,9 @@ namespace E_Commerce.BusinessLayer.Services
             _context = context;
         }
 
-        public BasketReponseDto addBasket(List<ProductDto> products,int customerId)
+        public void addBasket(List<ProductDto> products,int customerId) 
         {
-
+          
             var founded_basket = _context.Baskets.FirstOrDefault(b => b.customerId == customerId && b.basketStatusId == 1);
 
             if (founded_basket != null)
@@ -37,11 +37,13 @@ namespace E_Commerce.BusinessLayer.Services
                  BasketId
                  */
                 List<ProductDto> basket_products = new List<ProductDto>();
+              
 
                 basket_products.AddRange(products);
                
                 var founded_basket_details = _context.BasketDetails.Where(bd => bd.basketId == founded_basket.BasketID).ToList();
 
+                var totalprice = 0;
                
                 for (int i = 0; i < founded_basket_details.Count; i++) 
                 {
@@ -50,28 +52,45 @@ namespace E_Commerce.BusinessLayer.Services
                         if (founded_basket_details[i].productId == basket_products[j].productId)
                         {
                             founded_basket_details[i].productQuantity += basket_products[j].productQuantity;
+                            
+                            
                             _context.BasketDetails.Update(founded_basket_details[i]);
                             _context.SaveChanges();
 
                             basket_products.RemoveAt(j);
                         }
+                    
                     }
+
+                   
+
 
                     if (basket_products.Count == 0)
                     {
+                       
                         break;
                     }
                 }
 
-                return null;
+                for (int j = 0; j < basket_products.Count; j++)
+                {
+                    BasketDetail basketDetail = new BasketDetail()
+                    {
+                        basketId = founded_basket.BasketID,
+                        productId = basket_products[j].productId,
+                        categoryId = basket_products[j].categoryId,
+                        productQuantity = basket_products[j].productQuantity,
+                        productPrice = basket_products[j].productPrice,
+                        productName = basket_products[j].productName,
+
+                    };
+
+                    _context.BasketDetails.Add(basketDetail);
+                    _context.SaveChanges();
+                }
+
             }
-            else
-            {
-                return null;
-            }
-
-
-
+         
         }
 
         public bool changeBasketStatus(BasketStatusChangeDto basketStatusChangeDto)

@@ -16,8 +16,8 @@ namespace E_Commerce.DataAccess.Entities
 
         public int cardNumber { get; set; }
 
+        public int basketId { get; set; }
 
-      
 
     }
 }

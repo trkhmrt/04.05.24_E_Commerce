@@ -65,15 +65,22 @@ namespace E_Commerce.Controller
         [Route("addBasket/{customerId}")]
         public IActionResult addBasket(List<ProductDto> products,int customerId)
         {
-            var basket = _basketService.addBasket(products,customerId);
 
-            if (basket.Basket == null)
+            try
             {
-                return NotFound(basket);
+                _basketService.addBasket(products, customerId);
+                return Ok(new {successMessage="Ürünler Sepete Eklendi."});
             }
+        
+            catch(Exception e)
+            {
+                return BadRequest(new { errorMessage = "Baskete eklenirken hata oluştu." });
+            }
+           
 
-            return Ok(basket);
+         
         }
+
 
 
         [HttpPost]

@@ -66,8 +66,43 @@ namespace E_Commerce.DataAccess.Extensions
                   {
                       basketStatusId = 3,
                       basketStatusDescription = "Basket Canceled"
-                  }
+                  },
+                   new BasketStatus
+                   {
+                       basketStatusId = 4,
+                       basketStatusDescription = "Basket Paid"
+                   }
 
+
+                );
+            #endregion
+            #region OrderStatus
+            modelBuilder.Entity<OrderStatus>().HasData(
+                new OrderStatus
+                {
+                    orderStatusId = 1,
+                    statusName = "Order Active"
+                },
+                 new OrderStatus
+                 {
+                     orderStatusId = 2,
+                     statusName = "Order Canceled"
+                 },
+                  new OrderStatus
+                  {
+                      orderStatusId = 3,
+                      statusName = "Order Preparing"
+                  },
+                  new OrderStatus
+                  {
+                      orderStatusId = 4,
+                      statusName = "Order On The Way"
+                  },
+                  new OrderStatus
+                  {
+                      orderStatusId = 5,
+                      statusName = "Order Delivered"
+                  }
                 );
             #endregion
             #region Basket
@@ -99,20 +134,32 @@ namespace E_Commerce.DataAccess.Extensions
                 new BasketDetail
                 {
                     basketDetailId = 2000,
-                    basketId = 1,
+                    basketId = 9000,
                     productName = "Oduncu Gömlek",
                     productPrice = 100,
                     productQuantity = 1,
-                    categoryId = 1
+                    categoryId = 1,
+                    productId = 1400
                 },
                 new BasketDetail
                 {
-                    basketDetailId = 2001,
-                    basketId = 1,
+                        basketDetailId = 2001,
+                        basketId = 9000,
+                        productName = "Su geçirmez Bot",
+                        productPrice = 100,
+                        productQuantity = 1,
+                        categoryId = 1,
+                        productId = 1400
+                },
+                new BasketDetail
+                {
+                    basketDetailId = 2002,
+                    basketId = 9002,
                     productName = "Su geçirmez Bot",
                     productPrice = 100,
                     productQuantity = 1,
-                    categoryId = 2
+                    categoryId = 2,
+                    productId = 1720
                 }
                 );
             #endregion
