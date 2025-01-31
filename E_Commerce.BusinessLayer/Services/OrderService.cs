@@ -23,32 +23,52 @@ namespace E_Commerce.BusinessLayer.Services
             _context = context;
         }
 
-        public void createOrderByBasketId(int customerId)
+        public void createOrderBycustomerId(int customerId)
         {
-             var founded_basket = _context.Baskets.FirstOrDefault(b => b.customerId == customerId);
+             var founded_basket = _context.Baskets.FirstOrDefault(b => b.customerId == customerId && b.basketStatusId==2);
 
-            var founded_payment = _context.Payments.LastOrDefault(p => p.customerId == customerId);
-
-
-
-            if(founded_basket != null)
+            if (founded_basket != null)
             {
-                Order order = new Order()
-                {
-                    BasketID = founded_basket.BasketID,
-                    PaymentID = founded_payment.paymentId,
-                    StatusID = 1,
-                    CargoCompanyID = 1,
-                    
+                var founded_basket_details = _context.BasketDetails.Where(bd => bd.basketId == founded_basket.BasketID).ToList();
 
-                   
-                };
+                Payment payment = new Payment();
+
+                payment.customerId = customerId;
+                payment.cardNumber = 123456789;
+                payment.basketId = founded_basket.BasketID;
+                payment.paymentAmount = founded_basket_details.Sum(x => x.productQuantity * x.productPrice);
 
 
+                _context.Payments.Add(payment);
+                _context.SaveChanges();
+
+
+
+                Order order = new Order();
+
+                
+                order.PaymentID = payment.paymentId;
+                order.BasketID = founded_basket.BasketID;
+                order.StatusID = 1;
+                order.CargoCompanyID = 1;
+
+                founded_basket.basketStatusId = 4; //Basket Paid'e çekildi.
+
+
+                _context.Baskets.Update(founded_basket);
+                _context.Orders.Add(order);
+
+
+
+                _context.SaveChanges();
 
 
 
             }
+
+
+
+
 
         }
     }

@@ -13,7 +13,8 @@ namespace E_Commerce.InFrustracture.Extensions
             //services.AddScoped<IBasketDetailService, BasketDetailService>();
             services.AddScoped<IBasketService, BasketService>();
             services.AddScoped<IOrderService, OrderService>(); 
-services.AddScoped<IPaymentService, PaymentService>();
+            services.AddScoped<IPaymentService, PaymentService>();
+            services.AddScoped<IProductService, ProductService>();
 
 
             return services;

@@ -70,6 +70,22 @@
   },
   {
     "ContainingType": "E_Commerce.Controller.BasketController",
+    "Method": "getBasketDetailsByCustomerId",
+    "RelativePath": "Basket/getBasketDetailsByCustomerId/{customerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_Commerce.Controller.BasketController",
     "Method": "getBaskets",
     "RelativePath": "Basket/getBaskets",
     "HttpMethod": "GET",
@@ -80,16 +96,16 @@
   },
   {
     "ContainingType": "E_Commerce.Controller.OrderController",
-    "Method": "createOrderByBasketId",
-    "RelativePath": "Order/createOrder",
+    "Method": "createOrderBycustomerId",
+    "RelativePath": "Order/createOrder/{customerId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "basketId",
+        "Name": "customerId",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -118,6 +134,74 @@
       {
         "Type": "System.Void",
         "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "E_Commerce.Controller.ProductController",
+    "Method": "addProduct",
+    "RelativePath": "Product/addProduct",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "product",
+        "Type": "E_Commerce.DataAccess.Entities.Product",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "E_Commerce.Controller.ProductController",
+    "Method": "getAllProducts",
+    "RelativePath": "Product/getAllProducts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[E_Commerce.DataAccess.Entities.Product, E_Commerce.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "E_Commerce.Controller.ProductController",
+    "Method": "getProductById",
+    "RelativePath": "Product/getProductById/{productId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "E_Commerce.DataAccess.Entities.Product",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 200
       }
     ]

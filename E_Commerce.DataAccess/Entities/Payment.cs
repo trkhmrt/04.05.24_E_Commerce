@@ -19,5 +19,7 @@ namespace E_Commerce.DataAccess.Entities
         public int basketId { get; set; }
 
 
+
+
     }
 }

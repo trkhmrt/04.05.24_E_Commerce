@@ -60,25 +60,24 @@ namespace E_Commerce.Controller
         }
 
 
-
         [HttpPost]
         [Route("addBasket/{customerId}")]
-        public IActionResult addBasket(List<ProductDto> products,int customerId)
+        public IActionResult addBasket(List<ProductDto> products, int customerId)
         {
 
             try
             {
                 _basketService.addBasket(products, customerId);
-                return Ok(new {successMessage="Ürünler Sepete Eklendi."});
+                return Ok(new { successMessage = "Ürünler Sepete Eklendi." });
             }
-        
-            catch(Exception e)
+
+            catch (Exception e)
             {
                 return BadRequest(new { errorMessage = "Baskete eklenirken hata oluştu." });
             }
-           
 
-         
+
+
         }
 
 
@@ -98,8 +97,21 @@ namespace E_Commerce.Controller
         }
 
 
+        [HttpGet]
+        [Route("getBasketDetailsByCustomerId/{customerId}")]
+        public IActionResult getBasketDetailsByCustomerId(int customerId)
+        {
 
+            var basketDetails = _basketService.getBasketDetailsByCustomerId(customerId);
 
+            if (basketDetails.Count == 0)
+            {
+                return NotFound(basketDetails);
+            }
+
+            return Ok(basketDetails);
+
+        }
 
 
     }

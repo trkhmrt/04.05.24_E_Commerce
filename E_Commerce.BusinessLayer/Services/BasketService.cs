@@ -72,6 +72,7 @@ namespace E_Commerce.BusinessLayer.Services
                     }
                 }
 
+
                 for (int j = 0; j < basket_products.Count; j++)
                 {
                     BasketDetail basketDetail = new BasketDetail()
@@ -119,10 +120,6 @@ namespace E_Commerce.BusinessLayer.Services
 
         }
      
-
-
-
-
         public BasketReponseDto getBasketByBasketId(int basketId)
         {
             BasketReponseDto basketReponseDto = new BasketReponseDto();
@@ -171,6 +168,22 @@ namespace E_Commerce.BusinessLayer.Services
         public List<Basket> getBaskets()
         {
            return _context.Baskets.ToList();
+        }
+
+        public List<BasketDetail> getBasketDetailsByCustomerId(int customerId)
+        {
+
+            var founded_basket = _context.Baskets.FirstOrDefault(b => b.customerId == customerId && b.basketStatusId == 1);
+
+            if(founded_basket == null)
+            {
+                return new List<BasketDetail>();
+            }
+
+            var founded_basket_detail = _context.BasketDetails.Where(bd => bd.basketId == founded_basket.BasketID).ToList();
+
+
+            return founded_basket_detail;
         }
     }
 }

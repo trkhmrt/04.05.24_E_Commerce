@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_Commerce.DataAccess.Migrations
 {
     [DbContext(typeof(E_CommerceDbContext))]
-    [Migration("20250127185133_AddOrderStatus3")]
-    partial class AddOrderStatus3
+    [Migration("20250131192329_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -221,8 +221,9 @@ namespace E_Commerce.DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CargoCompanyID"));
 
-                    b.Property<int>("CargoCompanyName")
-                        .HasColumnType("int");
+                    b.Property<string>("CargoCompanyName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CargoCompanyID");
 

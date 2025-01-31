@@ -8,7 +8,8 @@ namespace E_Commerce.BusinessLayer.Interfaces
 {
     public interface IOrderService
     {
-        void createOrderByBasketId(int customerId);
+        void createOrderBycustomerId(int customerId);
+
 
     }
 }

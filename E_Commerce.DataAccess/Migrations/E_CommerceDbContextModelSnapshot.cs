@@ -218,8 +218,9 @@ namespace E_Commerce.DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CargoCompanyID"));
 
-                    b.Property<int>("CargoCompanyName")
-                        .HasColumnType("int");
+                    b.Property<string>("CargoCompanyName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CargoCompanyID");
 
