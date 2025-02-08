@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_Commerce.BusinessLayer.ResponseDto
+namespace E_Commerce.BusinessLayer.Dto.ResponseDto
 {
     public class BasketStatusChangeDto
     {

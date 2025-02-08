@@ -1,5 +1,5 @@
-﻿using E_Commerce.BusinessLayer.Interfaces;
-using E_Commerce.BusinessLayer.ResponseDto;
+﻿using E_Commerce.BusinessLayer.Dto.ResponseDto;
+using E_Commerce.BusinessLayer.Interfaces;
 using E_Commerce.DataAccess.Context;
 using E_Commerce.DataAccess.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -89,6 +89,16 @@ namespace E_Commerce.BusinessLayer.Services
                     _context.BasketDetails.Add(basketDetail);
                     _context.SaveChanges();
                 }
+
+                var basketQuantityPrice = calculateBasketPriceQuantity(customerId);
+
+                founded_basket.TotalQuantity = basketQuantityPrice.basketTotalQuantity;
+                founded_basket.TotalPrice = basketQuantityPrice.basketTotalPrice;
+                _context.Baskets.Update(founded_basket);
+                _context.SaveChanges();
+
+
+
 
             }
          
@@ -184,6 +194,20 @@ namespace E_Commerce.BusinessLayer.Services
 
 
             return founded_basket_detail;
+        }
+
+        public BasketQuantityPriceDto calculateBasketPriceQuantity(int customerId)
+        {
+            int totalPrice = getBasketDetailsByCustomerId(customerId).Sum(bd=>bd.productQuantity*bd.productPrice);
+            int totalQuantity = getBasketDetailsByCustomerId(customerId).Sum(bd => bd.productQuantity);
+
+            BasketQuantityPriceDto basketQuantityPriceDto = new BasketQuantityPriceDto()
+            {
+                basketTotalPrice = totalPrice,
+                basketTotalQuantity = totalQuantity,
+            };
+
+            return basketQuantityPriceDto;
         }
     }
 }

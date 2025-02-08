@@ -374,6 +374,9 @@ namespace E_Commerce.DataAccess.Migrations
                     b.Property<int>("StatusID")
                         .HasColumnType("int");
 
+                    b.Property<int>("customerId")
+                        .HasColumnType("int");
+
                     b.HasKey("OrderID");
 
                     b.ToTable("Orders");

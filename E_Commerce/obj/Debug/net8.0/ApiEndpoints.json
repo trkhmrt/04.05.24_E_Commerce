@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "products",
-        "Type": "System.Collections.Generic.List\u00601[[E_Commerce.BusinessLayer.ResponseDto.ProductDto, E_Commerce.BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[E_Commerce.BusinessLayer.Dto.ResponseDto.ProductDto, E_Commerce.BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       },
       {
@@ -30,7 +30,7 @@
     "Parameters": [
       {
         "Name": "basketStatusChangeDto",
-        "Type": "E_Commerce.BusinessLayer.ResponseDto.BasketStatusChangeDto",
+        "Type": "E_Commerce.BusinessLayer.Dto.ResponseDto.BasketStatusChangeDto",
         "IsRequired": true
       }
     ],
@@ -97,7 +97,29 @@
   {
     "ContainingType": "E_Commerce.Controller.OrderController",
     "Method": "createOrderBycustomerId",
-    "RelativePath": "Order/createOrder/{customerId}",
+    "RelativePath": "createOrder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderRequestDto",
+        "Type": "E_Commerce.BusinessLayer.Dto.RequestDto.OrderRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "E_Commerce.Controller.OrderController",
+    "Method": "getAllOrderByCustomerId",
+    "RelativePath": "Order",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -105,7 +127,7 @@
       {
         "Name": "customerId",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [

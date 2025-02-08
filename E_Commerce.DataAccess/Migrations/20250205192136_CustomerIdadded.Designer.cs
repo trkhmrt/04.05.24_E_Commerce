@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_Commerce.DataAccess.Migrations
 {
     [DbContext(typeof(E_CommerceDbContext))]
-    [Migration("20250131192329_Initial")]
-    partial class Initial
+    [Migration("20250205192136_CustomerIdadded")]
+    partial class CustomerIdadded
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -375,6 +375,9 @@ namespace E_Commerce.DataAccess.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("StatusID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("customerId")
                         .HasColumnType("int");
 
                     b.HasKey("OrderID");

@@ -1,5 +1,5 @@
-﻿using E_Commerce.BusinessLayer.Interfaces;
-using E_Commerce.BusinessLayer.ResponseDto;
+﻿using E_Commerce.BusinessLayer.Dto.ResponseDto;
+using E_Commerce.BusinessLayer.Interfaces;
 using E_Commerce.DataAccess.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

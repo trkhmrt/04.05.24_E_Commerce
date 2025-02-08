@@ -1,4 +1,4 @@
-﻿using E_Commerce.BusinessLayer.ResponseDto;
+﻿using E_Commerce.BusinessLayer.Dto.ResponseDto;
 using E_Commerce.DataAccess.Entities;
 using System;
 using System.Collections.Generic;

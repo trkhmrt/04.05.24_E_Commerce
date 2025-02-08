@@ -17,6 +17,8 @@ namespace E_Commerce.DataAccess.Entities
 
         public int StatusID { get; set; }
 
+        public int customerId { get; set; }
+
         public int CargoCompanyID { get; set; }
 
 

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\E_Commerce.csproj": {}
+    "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\E_Commerce.csproj": {}
   },
   "projects": {
-    "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj": {
+    "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj",
         "projectName": "E_Commerce.BusinessLayer",
-        "projectPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\boyut\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\TERMINAL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\boyut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TERMINAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj"
+              "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj"
               }
             }
           }
@@ -44,7 +47,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -65,21 +69,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj": {
+    "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj",
         "projectName": "E_Commerce.DataAccess",
-        "projectPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\boyut\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\TERMINAL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\boyut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TERMINAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,7 +95,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -105,7 +112,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -148,21 +156,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\E_Commerce.csproj": {
+    "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\E_Commerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\E_Commerce.csproj",
+        "projectUniqueName": "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\E_Commerce.csproj",
         "projectName": "E_Commerce",
-        "projectPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\E_Commerce.csproj",
-        "packagesPath": "C:\\Users\\boyut\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\obj\\",
+        "projectPath": "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\E_Commerce.csproj",
+        "packagesPath": "C:\\Users\\TERMINAL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\boyut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TERMINAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -170,18 +182,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj"
+              "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj"
               },
-              "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj"
+              "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\TERMINAL\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj"
               }
             }
           }
@@ -195,7 +206,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -229,7 +241,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
