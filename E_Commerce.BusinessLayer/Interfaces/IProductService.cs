@@ -12,6 +12,8 @@ namespace E_Commerce.BusinessLayer.Interfaces
     {
         void addProduct(Product product);
 
+        bool deleteProduct(int productId);
+
         List<Product> getProducts();
 
         Product getProductById(int productId);

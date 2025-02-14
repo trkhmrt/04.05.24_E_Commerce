@@ -26,6 +26,22 @@ namespace E_Commerce.BusinessLayer.Services
             _context.SaveChanges();
         }
 
+        public bool deleteProduct(int productId)
+        {
+            var founded_product = _context.Products.FirstOrDefault(p => p.productId == productId);
+            if (founded_product != null)
+            {
+                _context.Products.Remove(founded_product);
+                _context.SaveChanges();
+                return true;
+            }
+
+            return false;
+
+
+
+        }
+
         public Product getProductById(int productId)
         {
             return _context.Products.FirstOrDefault(x => x.productId == productId);

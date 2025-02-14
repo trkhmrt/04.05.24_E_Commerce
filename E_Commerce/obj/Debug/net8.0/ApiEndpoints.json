@@ -38,6 +38,22 @@
   },
   {
     "ContainingType": "E_Commerce.Controller.BasketController",
+    "Method": "deleteProductToBasketByProductId",
+    "RelativePath": "Basket/deleteProductToBasketByProductId",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "basketProductDeleteDto",
+        "Type": "E_Commerce.BusinessLayer.Dto.RequestDto.BasketProductDeleteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_Commerce.Controller.BasketController",
     "Method": "getBasketByBasketId",
     "RelativePath": "Basket/getBasketByBasketId/{basketId}",
     "HttpMethod": "GET",
@@ -96,8 +112,24 @@
   },
   {
     "ContainingType": "E_Commerce.Controller.OrderController",
+    "Method": "changeOrderStatus",
+    "RelativePath": "Order/changeOrderStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderChangeStatusRequestDto",
+        "Type": "E_Commerce.BusinessLayer.Dto.RequestDto.OrderChangeStatusRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "E_Commerce.Controller.OrderController",
     "Method": "createOrderBycustomerId",
-    "RelativePath": "createOrder",
+    "RelativePath": "Order/createOrder",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -119,7 +151,7 @@
   {
     "ContainingType": "E_Commerce.Controller.OrderController",
     "Method": "getAllOrderByCustomerId",
-    "RelativePath": "Order",
+    "RelativePath": "Order/getAllOrderByCustomerId",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -132,8 +164,12 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "System.Collections.Generic.List\u00601[[E_Commerce.BusinessLayer.Dto.ResponseDto.OrderResponseDto, E_Commerce.BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 200
       }
     ]
@@ -181,6 +217,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "E_Commerce.Controller.ProductController",
+    "Method": "deleteProduct",
+    "RelativePath": "Product/deleteProduct/{productId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "E_Commerce.Controller.ProductController",

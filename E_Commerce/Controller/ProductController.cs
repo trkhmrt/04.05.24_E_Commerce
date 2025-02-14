@@ -40,7 +40,19 @@ namespace E_Commerce.Controller
             _productService.addProduct(product);
         }
 
+        [HttpDelete]
+        [Route("deleteProduct/{productId}")]
+        public IActionResult deleteProduct(int productId)
+        {
+           if(_productService.deleteProduct(productId))
+            {
+                return Ok("Ürün silindi.");            
+                    
+            }
 
+            return BadRequest("Ürün silinirken bir hata meydana geldi.!");
+
+        }
 
 
     }

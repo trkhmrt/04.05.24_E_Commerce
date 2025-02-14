@@ -143,16 +143,6 @@ namespace E_Commerce.DataAccess.Extensions
                 },
                 new BasketDetail
                 {
-                        basketDetailId = 2001,
-                        basketId = 9000,
-                        productName = "Su geçirmez Bot",
-                        productPrice = 100,
-                        productQuantity = 1,
-                        categoryId = 1,
-                        productId = 1400
-                },
-                new BasketDetail
-                {
                     basketDetailId = 2002,
                     basketId = 9002,
                     productName = "Su geçirmez Bot",

@@ -78,21 +78,7 @@ namespace E_Commerce.BusinessLayer.Services
                 }
 
                 _context.SaveChanges();
-                
-               
-
-
-
-              
-
-
-
             }
-
-
-
-
-
         }
 
         public List<OrderResponseDto> getAllOrderByCustomerId(int customerId)
@@ -101,28 +87,56 @@ namespace E_Commerce.BusinessLayer.Services
 
             if (founded_customer != null)
             {
+                List<OrderResponseDto> orderResponseDtos = new List<OrderResponseDto>();
                 var founded_customer_orders = _context.Orders.Where(o => o.customerId == customerId).ToList();
 
                 if (founded_customer_orders != null)
                 {
                     foreach (var item in founded_customer_orders)
                     {
+
+
                         OrderResponseDto orderResponseDto = new OrderResponseDto()
                         {
-                            cargoCompanyName = CargoCompanyDictionary.kargoSirketleri.FirstOrDefault(c => c.Key == item.CargoCompanyID).Value
+                            orderId = item.OrderID,
+                            cargoCompanyName = CargoCompanyDictionary.kargoSirketleri.FirstOrDefault(c => c.Key == item.CargoCompanyID).Value,
+                            customerAddress = _context.Addresses.FirstOrDefault(c => c.AddressID == founded_customer.ActiveAddressID).ProvinceID.ToString(),
+                            statuDescription = _context.OrderStatuses.FirstOrDefault(os => os.orderStatusId == item.StatusID).statusName,
+                            customerName = founded_customer.FirstName,
+                            customerLastName = founded_customer.LastName,
+
                         };
 
-                        
+                        orderResponseDtos.Add(orderResponseDto);
 
+                       
 
                     }
 
                 }
 
+                return orderResponseDtos;
 
             }
-
             return null;
+           
+        }
+
+        public Order  changeOrderStatus(OrderChangeStatusRequestDto orderChangeStatusRequestDto)
+        {
+
+            var founded_order = _context.Orders.FirstOrDefault(o => o.OrderID == orderChangeStatusRequestDto.orderId);
+
+            if (founded_order != null)
+            {
+                founded_order.StatusID = orderChangeStatusRequestDto.orderStatusId;
+                _context.Orders.Update(founded_order);
+                _context.SaveChanges();
+            }
+
+            return founded_order;
+            
+
         }
     }
 }

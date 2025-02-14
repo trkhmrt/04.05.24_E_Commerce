@@ -1,4 +1,5 @@
-﻿using E_Commerce.BusinessLayer.Dto.ResponseDto;
+﻿using E_Commerce.BusinessLayer.Dto.RequestDto;
+using E_Commerce.BusinessLayer.Dto.ResponseDto;
 using E_Commerce.DataAccess.Entities;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,8 @@ namespace E_Commerce.BusinessLayer.Interfaces
         bool changeBasketStatus(BasketStatusChangeDto basketStatusChangeDto);
 
         List<BasketDetail> getBasketDetailsByCustomerId(int customerId);
+
+        bool deleteProductToBasketByProductId(BasketProductDeleteDto basketProductDeleteDto);
 
 
 

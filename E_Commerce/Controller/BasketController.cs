@@ -1,4 +1,5 @@
-﻿using E_Commerce.BusinessLayer.Dto.ResponseDto;
+﻿using E_Commerce.BusinessLayer.Dto.RequestDto;
+using E_Commerce.BusinessLayer.Dto.ResponseDto;
 using E_Commerce.BusinessLayer.Interfaces;
 using E_Commerce.DataAccess.Entities;
 using Microsoft.AspNetCore.Http;
@@ -112,6 +113,23 @@ namespace E_Commerce.Controller
             return Ok(basketDetails);
 
         }
+
+        [HttpPost]
+        [Route("deleteProductToBasketByProductId")]
+        public IActionResult deleteProductToBasketByProductId(BasketProductDeleteDto basketProductDeleteDto)
+        {
+
+            if (_basketService.deleteProductToBasketByProductId(basketProductDeleteDto))
+            {
+                return Ok();
+            }
+
+            return BadRequest();
+
+
+           
+        }
+
 
 
     }

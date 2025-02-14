@@ -14,6 +14,7 @@ namespace E_Commerce.BusinessLayer.Interfaces
         void createOrderBycustomerId(OrderRequestDto orderRequestDto);
         List<OrderResponseDto> getAllOrderByCustomerId(int customerId);
 
+        Order changeOrderStatus(OrderChangeStatusRequestDto orderChangeStatusRequestDto);
 
 
 

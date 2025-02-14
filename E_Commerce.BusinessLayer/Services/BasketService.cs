@@ -1,4 +1,5 @@
-﻿using E_Commerce.BusinessLayer.Dto.ResponseDto;
+﻿using E_Commerce.BusinessLayer.Dto.RequestDto;
+using E_Commerce.BusinessLayer.Dto.ResponseDto;
 using E_Commerce.BusinessLayer.Interfaces;
 using E_Commerce.DataAccess.Context;
 using E_Commerce.DataAccess.Entities;
@@ -208,6 +209,38 @@ namespace E_Commerce.BusinessLayer.Services
             };
 
             return basketQuantityPriceDto;
+        }
+
+        public bool deleteProductToBasketByProductId(BasketProductDeleteDto basketProductDeleteDto)
+        {
+            var founded_basket = _context.Baskets.FirstOrDefault(b=>b.BasketID == basketProductDeleteDto.basketId && b.customerId==basketProductDeleteDto.customerId && b.basketStatusId==1);
+
+            if (founded_basket != null)
+            {
+                var founded_basket_detail = _context.BasketDetails.Where(bd => bd.basketId == founded_basket.BasketID);
+
+                foreach (var item in founded_basket_detail)
+                {
+                    if(item.productId == basketProductDeleteDto.productId)
+                    {
+                        _context.BasketDetails.Remove(item);
+                        
+                    }
+
+                }
+
+                var basketQuantityPriceDto = calculateBasketPriceQuantity(basketProductDeleteDto.customerId);
+
+                founded_basket.TotalPrice = basketQuantityPriceDto.basketTotalPrice;
+                founded_basket.TotalQuantity = basketQuantityPriceDto.basketTotalQuantity;
+
+                _context.Baskets.Update(founded_basket);
+
+                _context.SaveChanges();
+                return true;
+            }
+
+            return false;
         }
     }
 }
