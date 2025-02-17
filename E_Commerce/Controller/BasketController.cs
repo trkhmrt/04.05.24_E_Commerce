@@ -2,6 +2,7 @@
 using E_Commerce.BusinessLayer.Dto.ResponseDto;
 using E_Commerce.BusinessLayer.Interfaces;
 using E_Commerce.DataAccess.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +21,7 @@ namespace E_Commerce.Controller
         }
 
 
+        [Authorize(Roles ="Customer,User")]
         [HttpGet]
         [Route("getBaskets")]
         public IActionResult getBaskets()
