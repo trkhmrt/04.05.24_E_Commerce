@@ -15,6 +15,9 @@ namespace E_Commerce.InFrustracture.Extensions
             services.AddScoped<IOrderService, OrderService>(); 
             services.AddScoped<IPaymentService, PaymentService>();
             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserRolesService, UserRolesService>();
+            services.AddScoped<IAuthService, AuthService>();
 
 
             return services;

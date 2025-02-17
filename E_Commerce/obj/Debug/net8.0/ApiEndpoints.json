@@ -8,9 +8,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "username",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "loginDto",
+        "Type": "E_Commerce.BusinessLayer.Dto.RequestDto.LoginDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

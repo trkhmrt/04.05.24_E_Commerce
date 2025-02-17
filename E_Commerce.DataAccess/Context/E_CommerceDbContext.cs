@@ -26,6 +26,23 @@ namespace E_Commerce.DataAccess.Context
 
             SeedDataCreator.SeedDataCreate(modelBuilder);
 
+            modelBuilder.Entity<UserRole>()
+                .HasKey(ur => new { ur.UserId, ur.RoleId });
+
+            modelBuilder.Entity<UserRole>()
+                .HasOne(ur => ur.User)
+                .WithMany(u => u.userRoles)
+                .HasForeignKey(ur => ur.UserId);
+
+            modelBuilder.Entity<UserRole>()
+                .HasOne(ur => ur.Role)
+                .WithMany(r => r.userRoles)
+                .HasForeignKey(ur => ur.RoleId);
+
+
+
+
+
             base.OnModelCreating(modelBuilder);
         }
 
@@ -49,6 +66,9 @@ namespace E_Commerce.DataAccess.Context
         public DbSet<Address> Addresses { get; set; }
         public DbSet<BasketStatus> BasketStatuses { get; set; }
         public DbSet<OrderStatus> OrderStatuses { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
 
 
 

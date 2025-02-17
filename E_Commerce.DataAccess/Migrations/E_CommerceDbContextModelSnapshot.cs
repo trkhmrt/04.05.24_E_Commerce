@@ -151,16 +151,6 @@ namespace E_Commerce.DataAccess.Migrations
                         },
                         new
                         {
-                            basketDetailId = 2001,
-                            basketId = 9000,
-                            categoryId = 1,
-                            productId = 1400,
-                            productName = "Su geçirmez Bot",
-                            productPrice = 100,
-                            productQuantity = 1
-                        },
-                        new
-                        {
                             basketDetailId = 2002,
                             basketId = 9002,
                             categoryId = 2,
@@ -583,6 +573,27 @@ namespace E_Commerce.DataAccess.Migrations
                     b.ToTable("Provinces");
                 });
 
+            modelBuilder.Entity("E_Commerce.DataAccess.Entities.Role", b =>
+                {
+                    b.Property<int>("roleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("roleId"));
+
+                    b.Property<string>("roleDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("roleName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("roleId");
+
+                    b.ToTable("Roles");
+                });
+
             modelBuilder.Entity("E_Commerce.DataAccess.Entities.Status", b =>
                 {
                     b.Property<int>("statusId")
@@ -655,6 +666,71 @@ namespace E_Commerce.DataAccess.Migrations
                     b.HasKey("taxId");
 
                     b.ToTable("Taxes");
+                });
+
+            modelBuilder.Entity("E_Commerce.DataAccess.Entities.User", b =>
+                {
+                    b.Property<int>("userId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("userId"));
+
+                    b.Property<string>("userEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("userPassword")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("userId");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("E_Commerce.DataAccess.Entities.UserRole", b =>
+                {
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("UserRoles");
+                });
+
+            modelBuilder.Entity("E_Commerce.DataAccess.Entities.UserRole", b =>
+                {
+                    b.HasOne("E_Commerce.DataAccess.Entities.Role", "Role")
+                        .WithMany("userRoles")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("E_Commerce.DataAccess.Entities.User", "User")
+                        .WithMany("userRoles")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("E_Commerce.DataAccess.Entities.Role", b =>
+                {
+                    b.Navigation("userRoles");
+                });
+
+            modelBuilder.Entity("E_Commerce.DataAccess.Entities.User", b =>
+                {
+                    b.Navigation("userRoles");
                 });
 #pragma warning restore 612, 618
         }
