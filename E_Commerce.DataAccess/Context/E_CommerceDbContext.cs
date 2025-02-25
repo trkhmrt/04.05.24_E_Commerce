@@ -14,7 +14,7 @@ namespace E_Commerce.DataAccess.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-4VHTMGB\\FULLSTACK;Database=E-CommerceDb;Trusted_Connection=True;Encrypt=False");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-IBV340F\\FULLSTACKDB;Database=E-CommerceDb;Trusted_Connection=True;Encrypt=False");
 
 
 
@@ -70,7 +70,7 @@ namespace E_Commerce.DataAccess.Context
         public DbSet<Role> Roles { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
 
-
+        public DbSet<Log> Logs { get; set; }
 
     }
 }

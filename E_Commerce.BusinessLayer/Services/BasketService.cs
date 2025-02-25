@@ -133,6 +133,10 @@ namespace E_Commerce.BusinessLayer.Services
      
         public BasketReponseDto getBasketByBasketId(int basketId)
         {
+            var sifir = 0;
+            var islem = 100 / sifir;
+
+
             BasketReponseDto basketReponseDto = new BasketReponseDto();
             var founded_basket = _context.Baskets.FirstOrDefault(b => b.BasketID == basketId);
 

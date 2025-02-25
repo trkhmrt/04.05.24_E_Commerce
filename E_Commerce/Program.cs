@@ -1,7 +1,10 @@
 ﻿
 using System.Text;
+using E_Commerce.BusinessLayer.Interfaces;
+using E_Commerce.BusinessLayer.Services;
 using E_Commerce.DataAccess.Context;
 using E_Commerce.InFrustracture.Extensions;
+using E_Commerce.InFrustracture.Middleware;
 using E_Commerce.JwtService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -50,10 +53,12 @@ namespace E_Commerce
             });
 
             builder.Services.AddSingleton<JwtGenerator>();
-
+           
 
             var app = builder.Build();
 
+            app.UseMiddleware<FirstMiddleware>();
+            app.UseMiddleware<SecondMiddleware>();
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {

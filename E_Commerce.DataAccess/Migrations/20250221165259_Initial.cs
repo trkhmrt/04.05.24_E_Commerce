@@ -174,6 +174,7 @@ namespace E_Commerce.DataAccess.Migrations
                     BasketID = table.Column<int>(type: "int", nullable: false),
                     PaymentID = table.Column<int>(type: "int", nullable: false),
                     StatusID = table.Column<int>(type: "int", nullable: false),
+                    customerId = table.Column<int>(type: "int", nullable: false),
                     CargoCompanyID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -260,6 +261,20 @@ namespace E_Commerce.DataAccess.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Roles",
+                columns: table => new
+                {
+                    roleId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    roleName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    roleDescription = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Roles", x => x.roleId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Statuses",
                 columns: table => new
                 {
@@ -299,13 +314,50 @@ namespace E_Commerce.DataAccess.Migrations
                     table.PrimaryKey("PK_Taxes", x => x.taxId);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    userId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    userPassword = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    userEmail = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.userId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "UserRoles",
+                columns: table => new
+                {
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    RoleId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserRoles", x => new { x.UserId, x.RoleId });
+                    table.ForeignKey(
+                        name: "FK_UserRoles_Roles_RoleId",
+                        column: x => x.RoleId,
+                        principalTable: "Roles",
+                        principalColumn: "roleId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_UserRoles_Users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "Users",
+                        principalColumn: "userId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.InsertData(
                 table: "BasketDetails",
                 columns: new[] { "basketDetailId", "basketId", "categoryId", "productId", "productName", "productPrice", "productQuantity" },
                 values: new object[,]
                 {
                     { 2000, 9000, 1, 1400, "Oduncu Gömlek", 100, 1 },
-                    { 2001, 9000, 1, 1400, "Su geçirmez Bot", 100, 1 },
                     { 2002, 9002, 2, 1720, "Su geçirmez Bot", 100, 1 }
                 });
 
@@ -381,6 +433,11 @@ namespace E_Commerce.DataAccess.Migrations
                     { 1, "Gömlek", 1 },
                     { 2, "Bot", 2 }
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserRoles_RoleId",
+                table: "UserRoles",
+                column: "RoleId");
         }
 
         /// <inheritdoc />
@@ -442,6 +499,15 @@ namespace E_Commerce.DataAccess.Migrations
 
             migrationBuilder.DropTable(
                 name: "Taxes");
+
+            migrationBuilder.DropTable(
+                name: "UserRoles");
+
+            migrationBuilder.DropTable(
+                name: "Roles");
+
+            migrationBuilder.DropTable(
+                name: "Users");
         }
     }
 }

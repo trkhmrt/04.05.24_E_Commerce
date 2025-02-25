@@ -169,3 +169,4 @@ C:\Users\TERMINAL\Documents\GitHub\04.05.24_E_Commerce\E_Commerce\obj\Debug\net8
 C:\Users\TERMINAL\Documents\GitHub\04.05.24_E_Commerce\E_Commerce\obj\Debug\net8.0\E_Commerce.genruntimeconfig.cache
 C:\Users\TERMINAL\Documents\GitHub\04.05.24_E_Commerce\E_Commerce\obj\Debug\net8.0\ref\E_Commerce.dll
 C:\Users\TERMINAL\Documents\GitHub\04.05.24_E_Commerce\E_Commerce\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\boyut\Documents\GitHub\04.05.24_E_Commerce\E_Commerce\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

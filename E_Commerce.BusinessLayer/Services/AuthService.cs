@@ -31,25 +31,30 @@ namespace E_Commerce.BusinessLayer.Services
 
             var user = _context.Users.FirstOrDefault(u=>u.userEmail == loginDto.userMail);
 
-            var founded_user_roles_id = _context.UserRoles.Where(ur => ur.UserId == user.userId).Select(rid=>rid.RoleId).ToList();
-
-
-            foreach (var role_id  in founded_user_roles_id)
+            if (user != null)
             {
-                var role = _context.Roles.FirstOrDefault(r=>r.roleId==role_id);
-                role_names.Add(role.roleName);
+                var founded_user_roles_id = _context.UserRoles.Where(ur => ur.UserId == user.userId).Select(rid => rid.RoleId).ToList();
+
+
+                foreach (var role_id in founded_user_roles_id)
+                {
+                    var role = _context.Roles.FirstOrDefault(r => r.roleId == role_id);
+                    role_names.Add(role.roleName);
+                }
+
+
+                UserDto userDto = new UserDto()
+                {
+                    userEmailToken = user.userEmail,
+                    userRolesToken = role_names
+                };
+
+
+
+                return userDto;
             }
 
-
-            UserDto userDto = new UserDto()
-            {
-                userEmailToken = user.userEmail,
-                userRolesToken = role_names
-            };
-
-
-
-            return userDto;
+            return null;
         }
     }
 }
