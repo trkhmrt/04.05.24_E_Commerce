@@ -2933,38 +2933,36 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\boyut\\.nuget\\packages\\": {}
+    "/Users/egitim/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\E_Commerce.csproj",
+      "projectUniqueName": "/Users/egitim/Documents/GitHub/04.05.24_E_Commerce/E_Commerce/E_Commerce.csproj",
       "projectName": "E_Commerce",
-      "projectPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\E_Commerce.csproj",
-      "packagesPath": "C:\\Users\\boyut\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce\\obj\\",
+      "projectPath": "/Users/egitim/Documents/GitHub/04.05.24_E_Commerce/E_Commerce/E_Commerce.csproj",
+      "packagesPath": "/Users/egitim/.nuget/packages/",
+      "outputPath": "/Users/egitim/Documents/GitHub/04.05.24_E_Commerce/E_Commerce/obj/",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
-        "C:\\Users\\boyut\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/egitim/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.BusinessLayer\\E_Commerce.BusinessLayer.csproj"
+            "/Users/egitim/Documents/GitHub/04.05.24_E_Commerce/E_Commerce.BusinessLayer/E_Commerce.BusinessLayer.csproj": {
+              "projectPath": "/Users/egitim/Documents/GitHub/04.05.24_E_Commerce/E_Commerce.BusinessLayer/E_Commerce.BusinessLayer.csproj"
             },
-            "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\boyut\\Documents\\GitHub\\04.05.24_E_Commerce\\E_Commerce.DataAccess\\E_Commerce.DataAccess.csproj"
+            "/Users/egitim/Documents/GitHub/04.05.24_E_Commerce/E_Commerce.DataAccess/E_Commerce.DataAccess.csproj": {
+              "projectPath": "/Users/egitim/Documents/GitHub/04.05.24_E_Commerce/E_Commerce.DataAccess/E_Commerce.DataAccess.csproj"
             }
           }
         }
@@ -2977,7 +2975,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
+        "auditMode": "all"
       }
     },
     "frameworks": {
@@ -3008,6 +3006,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-arm64",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -3016,7 +3028,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/egitim/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

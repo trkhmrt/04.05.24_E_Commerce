@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #divPosition{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        #divBackGroundColor{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+       
+        }
+    </style>
+</head>
+<body>
+    <p id="paragraf">Merhaba</p>
+    <button onclick={mesajDegis()}>Mesaj içeriğini değiştir.</button>
+    <button onclick=renkDegis()>Rengi değiştir.</button>
+    <button onclick="boyutDegis()">Yazı boyutunu değiştir.</button>
+
+
+    <!-- <div id="divPosition">HELLO WORLD
+
+        <button onclick="div_konum_degis()">KONUMU DÜZELT</button>
+    </div> -->
+
+
+    <div id="divBackGroundColor">HELLO WORLD
+    </div>
+</body>
+</html>
+
+
+
+<script>
+
+    var my_paragraf = document.getElementById("paragraf")
+    console.log(my_paragraf)
+    
+    const mesajDegis = function(){
+        my_paragraf.innerHTML = "<h1>JS'YE HOŞGELDİNİZ</h1>"
+       //my_paragraf.innerText = "JS'YE HOŞGELDİNİZ"
+    }
+
+
+    const renkDegis = function(){
+        my_paragraf.style.color = 'red'
+    }
+
+
+
+    const boyutDegis = function(){
+
+        var paragraf_font_size = window.getComputedStyle(my_paragraf).fontSize
+
+        var value = parseInt(paragraf_font_size)
+        
+        my_paragraf.style.fontSize = `${value+20}px`
+    }
+
+    
+    var div = document.getElementById("divPosition")
+    var div2 = document.getElementById("divBackGroundColor")
+    const div_konum_degis = function (){
+
+        
+        div.style.top = "100px"
+
+    }
+
+   
+    document.addEventListener("mousemove",function(event){
+
+            div.style.left = event.clientX + "px"
+            div.style.top = event.clientY + "px" 
+
+    })
+
+    div2.addEventListener("mouseover",function(event){
+
+        div2.style.backgroundColor = 'aqua'
+
+        div2.innerText = "Tam üzerine bastın"
+
+        },{once:true})
+
+
+    div2.addEventListener("mouseleave",function(event){
+
+            div2.style.backgroundColor = 'red'
+
+            div2.innerText = "Mousela tekrar üzerime gel"
+            
+    })
+
+    
+
+
+
+
+
+</script>
