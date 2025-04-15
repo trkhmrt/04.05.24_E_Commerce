@@ -21,7 +21,6 @@ namespace E_Commerce.Controller
         }
 
 
-        [Authorize(Roles ="Customer,User")]
         [HttpGet]
         [Route("getBaskets")]
         public IActionResult getBaskets()

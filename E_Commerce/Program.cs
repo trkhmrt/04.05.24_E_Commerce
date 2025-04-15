@@ -20,6 +20,17 @@ namespace E_Commerce
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowFrontEnd", policy =>
+                {
+                    policy.WithOrigins("http://localhost:5173")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+
+            });
+               
             builder.Services.AddServices();
             builder.Services.AddDbContext<E_CommerceDbContext>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -56,7 +67,8 @@ namespace E_Commerce
            
 
             var app = builder.Build();
-
+            
+            app.UseCors("AllowFrontEnd");
             app.UseMiddleware<FirstMiddleware>();
             app.UseMiddleware<SecondMiddleware>();
             // Configure the HTTP request pipeline.

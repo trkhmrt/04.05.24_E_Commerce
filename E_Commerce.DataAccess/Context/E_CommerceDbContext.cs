@@ -14,7 +14,7 @@ namespace E_Commerce.DataAccess.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-IBV340F\\FULLSTACKDB;Database=E-CommerceDb;Trusted_Connection=True;Encrypt=False");
+            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=E-CommerceDb;User Id=sa;Password=StrongPassword123!;Encrypt=False;TrustServerCertificate=True;");
 
 
 

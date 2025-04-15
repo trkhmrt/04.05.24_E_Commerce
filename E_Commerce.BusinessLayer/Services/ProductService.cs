@@ -42,14 +42,16 @@ namespace E_Commerce.BusinessLayer.Services
 
         }
 
+        public List<Product> getProducts()
+        {
+            return _context.Products.ToList();
+        }
+
         public Product getProductById(int productId)
         {
             return _context.Products.FirstOrDefault(x => x.productId == productId);
         }
 
-        public List<Product> getProducts()
-        {
-          return _context.Products.ToList();
-        }
+     
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -148,6 +149,22 @@ namespace E_Commerce.DataAccess.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Favorites", x => x.FavoriteID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Logs",
+                columns: table => new
+                {
+                    logId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    logDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    requestPath = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    createDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    logType = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Logs", x => x.logId);
                 });
 
             migrationBuilder.CreateTable(
@@ -469,6 +486,9 @@ namespace E_Commerce.DataAccess.Migrations
 
             migrationBuilder.DropTable(
                 name: "Favorites");
+
+            migrationBuilder.DropTable(
+                name: "Logs");
 
             migrationBuilder.DropTable(
                 name: "OrderDetails");

@@ -18,10 +18,10 @@ namespace E_Commerce.Controller
         }
 
         [HttpGet]
-        [Route("getAllProducts")]
-        public List<Product> getAllProducts()
+        [Route("getProducts")]
+        public IActionResult GetProducts()
         {
-            return _productService.getProducts();
+            return Ok(_productService.getProducts());
         }
 
 
