@@ -1,12 +1,13 @@
 import React from 'react';
 import Products from "./Products.jsx";
+import Navbar from "../components/Navbar.jsx";
 
 const HomePage = () => {
     return (
-        <div>
-            <h1>Welcome to HomePage</h1>
+        <>
+             <Navbar></Navbar>
             <Products></Products>
-        </div>
+        </>
     );
 };
 
