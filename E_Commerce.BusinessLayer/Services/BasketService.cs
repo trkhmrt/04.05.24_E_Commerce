@@ -133,9 +133,7 @@ namespace E_Commerce.BusinessLayer.Services
      
         public BasketReponseDto getBasketByBasketId(int basketId)
         {
-            var sifir = 0;
-            var islem = 100 / sifir;
-
+            
 
             BasketReponseDto basketReponseDto = new BasketReponseDto();
             var founded_basket = _context.Baskets.FirstOrDefault(b => b.BasketID == basketId);
@@ -221,25 +219,16 @@ namespace E_Commerce.BusinessLayer.Services
 
             if (founded_basket != null)
             {
-                var founded_basket_detail = _context.BasketDetails.Where(bd => bd.basketId == founded_basket.BasketID);
-
-                foreach (var item in founded_basket_detail)
-                {
-                    if(item.productId == basketProductDeleteDto.productId)
-                    {
-                        _context.BasketDetails.Remove(item);
-                        
-                    }
-
-                }
-
+                var founded_basket_detail = _context.BasketDetails.FirstOrDefault(bd => bd.basketId == founded_basket.BasketID && basketProductDeleteDto.basketDetailId == bd.basketDetailId);
+                
+                
                 var basketQuantityPriceDto = calculateBasketPriceQuantity(basketProductDeleteDto.customerId);
 
                 founded_basket.TotalPrice = basketQuantityPriceDto.basketTotalPrice;
                 founded_basket.TotalQuantity = basketQuantityPriceDto.basketTotalQuantity;
 
                 _context.Baskets.Update(founded_basket);
-
+                _context.BasketDetails.Remove(founded_basket_detail);
                 _context.SaveChanges();
                 return true;
             }

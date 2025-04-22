@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+import {routeAddress} from "../constants/routes/RouteAddress.js";
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = React.useState(false);
@@ -29,6 +31,7 @@ const Navbar = () => {
 
                         <a className="text-gray-700 hover:text-blue-600">Hakkımızda</a>
                         <a className="text-gray-700 hover:text-blue-600">İletişim</a>
+                        <a className="text-gray-700 hover:text-blue-600"><Link to={routeAddress.Basket}>Sepet</Link></a>
                         <button className="text-black">Giriş Yap</button>
                     </div>
 

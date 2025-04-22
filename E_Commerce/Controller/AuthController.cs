@@ -35,7 +35,7 @@ namespace E_Commerce.Controller
 
                 _logService.createLog(new Log { createDate = DateTime.Now,logDescription = $"User Token={token}",requestPath = HttpContext.Request.Path , logType = 2 });
 
-                return Ok(new { JwtToken = token });
+                return Ok(new { accessToken = token , user = login_user});
             }
 
             _logService.createLog(new Log { createDate = DateTime.Now, logDescription = $"Kullanıcı adı veya şifre hatalı...", requestPath = HttpContext.Request.Path, logType = 3 });

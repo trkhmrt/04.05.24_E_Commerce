@@ -45,6 +45,7 @@ namespace E_Commerce.BusinessLayer.Services
 
                 UserDto userDto = new UserDto()
                 {
+                    userId = user.userId,
                     userEmailToken = user.userEmail,
                     userRolesToken = role_names
                 };

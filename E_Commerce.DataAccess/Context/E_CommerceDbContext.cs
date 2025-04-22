@@ -14,7 +14,7 @@ namespace E_Commerce.DataAccess.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=E-CommerceDb;User Id=sa;Password=StrongPassword123!;Encrypt=False;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=E-CommerceDb;User Id=sa;Password=yourStrong123;Encrypt=False;TrustServerCertificate=True;");
 
 
 
