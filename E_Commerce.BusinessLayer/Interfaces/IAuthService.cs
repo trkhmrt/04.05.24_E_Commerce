@@ -14,5 +14,6 @@ namespace E_Commerce.BusinessLayer.Interfaces
 
 
         UserDto login(LoginDto loginDto);
+        CustomerDto customerLogin(LoginDto loginDto);
     }
 }

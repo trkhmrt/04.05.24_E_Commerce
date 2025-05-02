@@ -24,7 +24,7 @@ namespace E_Commerce
             {
                 options.AddPolicy("AllowFrontEnd", policy =>
                 {
-                    policy.WithOrigins("http://localhost:5173")
+                    policy.AllowAnyOrigin()
                         .AllowAnyHeader()
                         .AllowAnyMethod();
                 });

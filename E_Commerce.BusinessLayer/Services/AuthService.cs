@@ -57,5 +57,26 @@ namespace E_Commerce.BusinessLayer.Services
 
             return null;
         }
+
+        public CustomerDto customerLogin(LoginDto loginDto)
+        {
+            var customer = _context.Customers.FirstOrDefault(c=>c.UserName == loginDto.userMail && c.Password == loginDto.password);
+            int customerBasketId = _context.Baskets
+                .Where(cb => cb.customerId == customer.customerId && cb.basketStatusId == 1).Select(cb => cb.BasketID).FirstOrDefault();
+            if (customer == null)
+            {
+                throw new Exception("Kullanıcı adı veya şifre hatalıdır.");
+            }
+            
+            return new CustomerDto
+            {
+                customerId = customer.customerId,
+                customerMail = customer.Email,
+                firstName = customer.FirstName,
+                lastName = customer.LastName,
+                customerActiveBasketId = customerBasketId
+            };
+            
+        }
     }
 }

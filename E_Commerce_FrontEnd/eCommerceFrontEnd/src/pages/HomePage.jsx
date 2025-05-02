@@ -5,7 +5,6 @@ import Navbar from "../components/Navbar.jsx";
 const HomePage = () => {
     return (
         <>
-             <Navbar></Navbar>
             <Products></Products>
         </>
     );

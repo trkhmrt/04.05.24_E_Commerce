@@ -26,83 +26,33 @@ namespace E_Commerce.BusinessLayer.Services
         {
             _context = context;
         }
-
-        public void addBasket(List<ProductDto> products,int customerId) 
+        
+        public void addProductToBasket(int basketId, int productId)
         {
-          
-            var founded_basket = _context.Baskets.FirstOrDefault(b => b.customerId == customerId && b.basketStatusId == 1);
-
-            if (founded_basket != null)
+            List<BasketDetail> foundedBasketDetails = _context.BasketDetails.Where(b => b.basketId == basketId).ToList();
+            
+            var duplicateProduct = foundedBasketDetails.Exists(b => b.productId == productId);
+            if (duplicateProduct)
             {
-                /*
-                 BasketId
-                 */
-                List<ProductDto> basket_products = new List<ProductDto>();
-              
-
-                basket_products.AddRange(products);
-               
-                var founded_basket_details = _context.BasketDetails.Where(bd => bd.basketId == founded_basket.BasketID).ToList();
-
-                var totalprice = 0;
-               
-                for (int i = 0; i < founded_basket_details.Count; i++) 
-                {
-                    for(int j = 0; j< basket_products.Count; j++)
-                    {
-                        if (founded_basket_details[i].productId == basket_products[j].productId)
-                        {
-                            founded_basket_details[i].productQuantity += basket_products[j].productQuantity;
-                            
-                            
-                            _context.BasketDetails.Update(founded_basket_details[i]);
-                            _context.SaveChanges();
-
-                            basket_products.RemoveAt(j);
-                        }
-                    
-                    }
-
-                   
-
-
-                    if (basket_products.Count == 0)
-                    {
-                       
-                        break;
-                    }
-                }
-
-
-                for (int j = 0; j < basket_products.Count; j++)
-                {
-                    BasketDetail basketDetail = new BasketDetail()
-                    {
-                        basketId = founded_basket.BasketID,
-                        productId = basket_products[j].productId,
-                        categoryId = basket_products[j].categoryId,
-                        productQuantity = basket_products[j].productQuantity,
-                        productPrice = basket_products[j].productPrice,
-                        productName = basket_products[j].productName,
-
-                    };
-
-                    _context.BasketDetails.Add(basketDetail);
-                    _context.SaveChanges();
-                }
-
-                var basketQuantityPrice = calculateBasketPriceQuantity(customerId);
-
-                founded_basket.TotalQuantity = basketQuantityPrice.basketTotalQuantity;
-                founded_basket.TotalPrice = basketQuantityPrice.basketTotalPrice;
-                _context.Baskets.Update(founded_basket);
-                _context.SaveChanges();
-
-
-
-
+                foundedBasketDetails.Find(b => b.productId == productId).productQuantity++;
             }
-         
+            else
+            {
+                Product product = _context.Products.FirstOrDefault(p => p.productId == productId);
+                
+                BasketDetail basketDetail = new BasketDetail
+                {
+                    basketId = basketId,
+                    productId = productId,
+                    productName = product.productName,
+                    productQuantity = 1,
+                    productPrice = product.productPrice,
+                    categoryId = product.categoryId,
+                };
+            
+                _context.BasketDetails.Add(basketDetail);
+            }
+            _context.SaveChanges();
         }
 
         public bool changeBasketStatus(BasketStatusChangeDto basketStatusChangeDto)
@@ -199,6 +149,11 @@ namespace E_Commerce.BusinessLayer.Services
             return founded_basket_detail;
         }
 
+        public List<BasketDetail> getBasketDetailsByBasketId(int basketId)
+        {
+           return _context.BasketDetails.Where(b => b.basketId == basketId).ToList();
+        }
+
         public BasketQuantityPriceDto calculateBasketPriceQuantity(int customerId)
         {
             int totalPrice = getBasketDetailsByCustomerId(customerId).Sum(bd=>bd.productQuantity*bd.productPrice);
@@ -226,7 +181,7 @@ namespace E_Commerce.BusinessLayer.Services
 
                 founded_basket.TotalPrice = basketQuantityPriceDto.basketTotalPrice;
                 founded_basket.TotalQuantity = basketQuantityPriceDto.basketTotalQuantity;
-
+                
                 _context.Baskets.Update(founded_basket);
                 _context.BasketDetails.Remove(founded_basket_detail);
                 _context.SaveChanges();

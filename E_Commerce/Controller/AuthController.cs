@@ -46,7 +46,35 @@ namespace E_Commerce.Controller
             
 
         }
+        
+        
+        [HttpPost("customerLogin")]
+        public IActionResult customerLogin(LoginDto loginDto)
+        {
+            try
+            {
+                var login_customer = _authService.customerLogin(loginDto);
+                
+                var token = _jwtGenerator.GenerateToken(login_customer.customerMail);
+
+                _logService.createLog(new Log { createDate = DateTime.Now,logDescription = $"User Token={token}",requestPath = HttpContext.Request.Path , logType = 2 });
+
+                return Ok(new { accessToken = token , user = login_customer});
+            }
+            catch(Exception ex)
+            {
+                
+                _logService.createLog(new Log { createDate = DateTime.Now, logDescription = $"Kullanıcı adı veya şifre hatalı...", requestPath = HttpContext.Request.Path, logType = 3 });
+
+                return Unauthorized(ex.Message);
+            }
+            
+            
 
 
+
+            
+
+        }
     }
 }

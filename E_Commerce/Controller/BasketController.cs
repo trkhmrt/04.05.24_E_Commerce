@@ -62,30 +62,15 @@ namespace E_Commerce.Controller
 
             return Ok(basket);
         }
-
-
-        [HttpPost]
-        [Route("addBasket/{customerId}")]
-        public IActionResult addBasket(List<ProductDto> products, int customerId)
+        
+        [HttpGet]
+        [Route("addProductToBasket/{basketId}/{productId}")]
+        public IActionResult addProductToBasket(int basketId, int productId)
         {
-
-            try
-            {
-                _basketService.addBasket(products, customerId);
-                return Ok(new { successMessage = "Ürünler Sepete Eklendi." });
-            }
-
-            catch (Exception e)
-            {
-                return BadRequest(new { errorMessage = "Baskete eklenirken hata oluştu." });
-            }
-
-
-
+            _basketService.addProductToBasket(basketId, productId);
+            return Ok();
         }
-
-
-
+        
         [HttpPost]
         [Route("changeBasketStatus")]
         public IActionResult changeBasketStatus(BasketStatusChangeDto basketStatusChangeDto)
@@ -117,6 +102,22 @@ namespace E_Commerce.Controller
 
         }
 
+        [HttpGet]
+        [Route("getBasketDetailsByBasketId/{basketId}")]
+        public IActionResult getBasketDetailsByBasketId(int basketId)
+        {
+
+            var basketDetails = _basketService.getBasketDetailsByBasketId(basketId);
+
+            if (basketDetails.Count == 0)
+            {
+                return NotFound(basketDetails);
+            }
+
+            return Ok(basketDetails);
+
+        }
+        
         [HttpPost]
         [Route("deleteProductToBasketByProductId")]
         public IActionResult deleteProductToBasketByProductId(BasketProductDeleteDto basketProductDeleteDto)

@@ -12,14 +12,14 @@ namespace E_Commerce.BusinessLayer.Interfaces
 
     public interface IBasketService
     {
-
-        void addBasket(List<ProductDto> products,int customerId);
+        void addProductToBasket(int basketId,int productId);
         List<Basket> getBaskets();
         BasketReponseDto getBasketByBasketId(int basketId);
         BasketReponseDto getBasketByCustomerId(int customerId);
         bool changeBasketStatus(BasketStatusChangeDto basketStatusChangeDto);
 
         List<BasketDetail> getBasketDetailsByCustomerId(int customerId);
+        List<BasketDetail> getBasketDetailsByBasketId(int basketId);
 
         bool deleteProductToBasketByProductId(BasketProductDeleteDto basketProductDeleteDto);
 

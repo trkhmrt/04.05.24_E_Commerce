@@ -25,7 +25,7 @@ namespace E_Commerce.JwtService
         }
 
 
-        public string GenerateToken (string username,List<string> roles)
+        public string GenerateToken (string username,List<string> roles = null)
         {
 
             var claims = new List<Claim>
@@ -35,11 +35,14 @@ namespace E_Commerce.JwtService
 
             };
 
-
-            foreach (var role in roles)
+            if (roles != null)
             {
-                claims.Add(new Claim(ClaimTypes.Role, role));
+                foreach (var role in roles)
+                {
+                    claims.Add(new Claim(ClaimTypes.Role, role));
+                }
             }
+           
 
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_secret));
