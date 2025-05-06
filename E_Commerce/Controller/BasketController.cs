@@ -73,16 +73,16 @@ namespace E_Commerce.Controller
         
         [HttpPost]
         [Route("changeBasketStatus")]
-        public IActionResult changeBasketStatus(BasketStatusChangeDto basketStatusChangeDto)
+        public IActionResult changeBasketStatus(BasketStatusChangeDto basketStatusDto)
         {
-            var basket = _basketService.changeBasketStatus(basketStatusChangeDto);
-
-            if (basket)
+            try
             {
-                return NotFound(basket);
+                return Ok(_basketService.changeBasketStatus(basketStatusDto));
             }
-
-            return Ok(basket);
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
 
 
@@ -106,16 +106,8 @@ namespace E_Commerce.Controller
         [Route("getBasketDetailsByBasketId/{basketId}")]
         public IActionResult getBasketDetailsByBasketId(int basketId)
         {
-
             var basketDetails = _basketService.getBasketDetailsByBasketId(basketId);
-
-            if (basketDetails.Count == 0)
-            {
-                return NotFound(basketDetails);
-            }
-
             return Ok(basketDetails);
-
         }
         
         [HttpPost]
@@ -129,12 +121,6 @@ namespace E_Commerce.Controller
             }
 
             return BadRequest();
-
-
-           
         }
-
-
-
     }
 }

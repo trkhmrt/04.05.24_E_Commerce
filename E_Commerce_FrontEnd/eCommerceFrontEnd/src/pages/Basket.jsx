@@ -1,31 +1,40 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios'
 import {Link} from "react-router-dom";
+import {changeBasketStatus} from "../services/BasketService.js";
+import CheckoutPage from "./CheckoutPage.jsx";
+
 const Basket = () => {
     const [customerInfo, setCustomerInfo] = useState(JSON.parse(localStorage.getItem("customerInfo")))
     const [basketDetail, setBasketDetail] = useState([]);
-    const [basketId,setBasketId] = useState(customerInfo.customerActiveBasketId)
-
+    const [basketId, setBasketId] = useState(customerInfo.customerActiveBasketId)
+    const [showCheckout, setShowCheckout] = useState(false)
+    const [basketFinalInfo, setBasketFinalInfo] = useState({})
     useEffect(() => {
 
         const getBasketByBasketId = async () => {
             const basketResponse = await axios.get(`http://localhost:5107/Basket/getBasketDetailsByBasketId/${basketId}`)
-            setBasketDetail(basketResponse.data)
             console.log(basketResponse)
+            setBasketDetail(basketResponse.data.basketDetails)
+            if (basketResponse.data.basketStatusId === 2) {
+                setShowCheckout(true)
+            } else {
+                setShowCheckout(false)
+            }
         }
 
         getBasketByBasketId()
 
-    },[])
+    }, [])
 
 
     const handleDeleteProductToBasket = async (basketDetailId) => {
         const response = await axios.post("http://localhost:5107/Basket/deleteProductToBasketByProductId",
             {
-            "basketId": 9002,
-            "customerId": 43125,
-            "basketDetailId": basketDetailId
-        }
+                "basketId": 9002,
+                "customerId": 43125,
+                "basketDetailId": basketDetailId
+            }
         )
 
         const newBasketDetail = basketDetail.filter((bd) => bd.basketDetailId !== basketDetailId)
@@ -35,6 +44,27 @@ const Basket = () => {
 
     }
 
+    const handleBasketStatus = async (proccessTypeId) => {
+
+        const basketId = JSON.parse(localStorage.getItem("customerInfo")).customerActiveBasketId
+        const basketInfo = {basketId, proccessTypeId}
+        const response = await changeBasketStatus(basketInfo)
+        if (response.data === true && proccessTypeId === 2) {
+            setShowCheckout(true)
+            createPayment()
+        }
+        else if (response.data === true && proccessTypeId === 1) {
+            setShowCheckout(false)
+        }
+    }
+
+    const createPayment = () => {
+        const  customerId = JSON.parse(localStorage.getItem("customerInfo")).customerId
+        const basketInfo = {paymentAmount:400,customerId,basketId}
+        setBasketFinalInfo(basketInfo)
+    }
+
+
 
 
     return (
@@ -43,13 +73,13 @@ const Basket = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6">
                 {/*ÜRÜNLERİN LİSTELENDİĞİ YER*/}
                 <div className="bg-white text-black md:col-span-2 rounded-xl border p-4 space-y-10">
-                    {basketDetail.map((item,index) => (
+                    {basketDetail.map((item, index) => (
                         <div key={index} className="bg-white text-black md:col-span-2 rounded-xl border p-4 space-y-10">
                             <div className="flex items-center justify-between border-b pb-3">
 
                                 <div className="flex items-center space-x-10 ">
                                     <div className="w-20 bg-white border rounded p-1">
-                                        <img  src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"/>
+                                        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"/>
                                     </div>
                                     <div>
                                         <h3>{item.productName}</h3>
@@ -62,13 +92,15 @@ const Basket = () => {
                                         placeholder="Adet"
                                         className="w-16 border rounded px-2 py-1 text-center"
                                     />
-                                    <p>{10*120} ₺</p>
-                                    <button onClick={()=>handleDeleteProductToBasket(item.basketDetailId)} className="text-red-600 hover:text-red-800">SİL</button>
+                                    <p>{10 * 120} ₺</p>
+                                    <button onClick={() => handleDeleteProductToBasket(item.basketDetailId)}
+                                            className="text-red-600 hover:text-red-800">SİL
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     ))}
-
+                    {showCheckout ? <CheckoutPage bfi={basketFinalInfo} /> : null}
                 </div>
                 <div className="bg-gray-700  rounded-xl border p-4 space-y-10">
                     {/*SEPET ÖZETİNİN GÖRÜNTÜLENDİĞİ YER*/}
@@ -89,9 +121,22 @@ const Basket = () => {
                         <span>Toplam</span>
                         <span>1000 ₺</span>
                     </div>
-                    <button className="bg-red-600 hover:bg-red-800 text-white w-full py-3 rounded-xl mt-4">
-                        Sepeti Onayla
-                    </button>
+                    {showCheckout ?
+                        <>
+                            <button className="bg-red-600 hover:bg-red-800 text-white w-full py-3 rounded-xl mt-4"
+                                    onClick={()=>handleBasketStatus(1)}>
+                                Alışverişe Devam Et
+                            </button>
+
+                        </>
+                        :
+                        <button className="bg-red-600 hover:bg-red-800 text-white w-full py-3 rounded-xl mt-4"
+                                onClick={()=>handleBasketStatus(2)}
+                        >Sepeti
+                            Onayla</button>
+
+                    }
+
                 </div>
             </div>
 

@@ -1,4 +1,5 @@
-﻿using E_Commerce.BusinessLayer.Interfaces;
+﻿using E_Commerce.BusinessLayer.Dto.RequestDto;
+using E_Commerce.BusinessLayer.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,11 +18,11 @@ namespace E_Commerce.Controller
         }
 
 
-        [HttpGet]
+        [HttpPost]
         [Route("createPayment")]
-        public void createPayment(int customerId)
+        public void createPayment(CheckOutDto checkOutDto)
         {
-            _paymentService.createPayment(customerId);
+            _paymentService.createPayment(checkOutDto);
         }
 
 

@@ -55,36 +55,34 @@ namespace E_Commerce.BusinessLayer.Services
             _context.SaveChanges();
         }
 
-        public bool changeBasketStatus(BasketStatusChangeDto basketStatusChangeDto)
+        public bool changeBasketStatus(BasketStatusChangeDto basketStatusDto)
         {
 
             // ProcessId 1 -> Approve basket  ProccessId 2 -> Cancel basket 
-            var founded_basket = _context.Baskets.FirstOrDefault(b => b.customerId == basketStatusChangeDto.customerId && b.basketStatusId == 1);
+            var foundedBasket = _context.Baskets.FirstOrDefault(b => b.BasketID == basketStatusDto.basketId);
 
-
-            if (basketStatusChangeDto.proccessTypeId == 1)
+            if (foundedBasket != null)
             {
-                founded_basket.basketStatusId = 2;
+                if (basketStatusDto.proccessTypeId == 2)
+                {
+                    foundedBasket.basketStatusId = 2;
+                }
+                else if (basketStatusDto.proccessTypeId == 1)
+                {
+                    foundedBasket.basketStatusId = 1;
+                }
+                _context.Baskets.Update(foundedBasket);
+                _context.SaveChanges();
+                return true;
             }
-            else if(basketStatusChangeDto.proccessTypeId == 2)
-            {
-                founded_basket.basketStatusId = 3;
-            }
 
-
-            _context.Baskets.Update(founded_basket);
-            _context.SaveChanges();
-
-            return true;
-
-
+            throw new Exception("Active Basket not found");
 
         }
      
         public BasketReponseDto getBasketByBasketId(int basketId)
         {
             
-
             BasketReponseDto basketReponseDto = new BasketReponseDto();
             var founded_basket = _context.Baskets.FirstOrDefault(b => b.BasketID == basketId);
 
@@ -149,9 +147,17 @@ namespace E_Commerce.BusinessLayer.Services
             return founded_basket_detail;
         }
 
-        public List<BasketDetail> getBasketDetailsByBasketId(int basketId)
+        public BasketDetailDto getBasketDetailsByBasketId(int basketId)
         {
-           return _context.BasketDetails.Where(b => b.basketId == basketId).ToList();
+            int foundedBasketStatusId = _context.Baskets.FirstOrDefault(b => b.BasketID == basketId).basketStatusId;
+            List <BasketDetail> foundedBasketDetails = _context.BasketDetails.Where(b => b.basketId == basketId).ToList();
+
+            return new BasketDetailDto
+            {
+                basketStatusId = foundedBasketStatusId,
+                BasketDetails = foundedBasketDetails
+            };
+
         }
 
         public BasketQuantityPriceDto calculateBasketPriceQuantity(int customerId)

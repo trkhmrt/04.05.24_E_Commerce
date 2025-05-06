@@ -19,7 +19,7 @@ namespace E_Commerce.BusinessLayer.Interfaces
         bool changeBasketStatus(BasketStatusChangeDto basketStatusChangeDto);
 
         List<BasketDetail> getBasketDetailsByCustomerId(int customerId);
-        List<BasketDetail> getBasketDetailsByBasketId(int basketId);
+        BasketDetailDto getBasketDetailsByBasketId(int basketId);
 
         bool deleteProductToBasketByProductId(BasketProductDeleteDto basketProductDeleteDto);
 

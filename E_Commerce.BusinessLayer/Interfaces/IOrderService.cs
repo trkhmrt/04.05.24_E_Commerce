@@ -11,12 +11,6 @@ namespace E_Commerce.BusinessLayer.Interfaces
 {
     public interface IOrderService
     {
-        void createOrderBycustomerId(OrderRequestDto orderRequestDto);
-        List<OrderResponseDto> getAllOrderByCustomerId(int customerId);
-
-        Order changeOrderStatus(OrderChangeStatusRequestDto orderChangeStatusRequestDto);
-
-
-
+        void createOrder(OrderRequestDto orderRequestDto);
     }
 }

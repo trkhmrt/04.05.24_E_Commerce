@@ -25,8 +25,6 @@ namespace E_Commerce.InFrustracture.Middleware
             catch(Exception e)
             {
                 logService.createLog(new Log { createDate = DateTime.Now, logDescription = e.Message, logType = 5, requestPath = httpContext.Request.Path });
-
-
              
             }
 

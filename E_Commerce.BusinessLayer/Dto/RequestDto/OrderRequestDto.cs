@@ -9,12 +9,6 @@ namespace E_Commerce.BusinessLayer.Dto.RequestDto
 {
     public class OrderRequestDto
     {
-
-        public  int customerId { get; set; }
-        public int cargoCompanyId {  get; set; }
-        
-
-
-
+        public  Payment payment { get; set; }
     }
 }

@@ -23,32 +23,13 @@ namespace E_Commerce.Controller
         [Route("createOrder")]
         public void createOrderBycustomerId(OrderRequestDto orderRequestDto)
         {
-            _orderService.createOrderBycustomerId(orderRequestDto);
+            _orderService.createOrder(orderRequestDto);
         }
 
-        [HttpGet]
-        [Route("getAllOrderByCustomerId")]
-        public List<OrderResponseDto> getAllOrderByCustomerId(int customerId)
-        {
-            return _orderService.getAllOrderByCustomerId(customerId);
-        }
-
-
-        [HttpPost]
-        [Route("changeOrderStatus")]
-        public IActionResult changeOrderStatus(OrderChangeStatusRequestDto orderChangeStatusRequestDto)
-        {
-            var order = _orderService.changeOrderStatus(orderChangeStatusRequestDto);
-
-            if (order != null)
-            {
-                return Ok(order);
-            }
-
-            return NotFound(order);
-            
        
-        }
+
+
+        
 
 
     }
